@@ -1,0 +1,25 @@
+// chapter2_6.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+int sytoy(double);
+
+int main()
+{
+	double sy;
+	cout << "Podaj liczbe lat swietlnych: ";
+	cin >> sy;
+	int lata = sytoy(sy);
+	cout << sy << " lat swietlnych = " << lata << " jednosek astronomicznych.";
+	cin.get();
+	cin.get();
+  return 0;
+}
+
+int sytoy(double y)
+{
+	int sytoy = y * 63240;
+	return sytoy;
+}
