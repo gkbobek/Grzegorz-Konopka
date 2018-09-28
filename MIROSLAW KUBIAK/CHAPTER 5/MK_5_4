@@ -1,0 +1,45 @@
+// MK_5_4.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który oblicza pole prostokąta. Powinien on zawierać trzy bezparametrowe funkcje: czytaj_dane(),
+przetworz_ dane() oraz wyswietl_wynik().Wartości boków a i b wprowadzamy z klawiatury. W programie należy założyć,
+że zmienne a, b oraz pole są typu float (rzeczywistego) i są zmiennymi globalnymi.
+Należy dla nich przyjąć format wyświetlania ich z dwoma miejscami po kropce.Funkcja czytaj_dane() czyta wartości boków a i b,
+przetworz_dane() oblicza pole prostokąta, a wyswietl_wynik() prezentuje wyniki na ekranie komputera.*/
+
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+#include <iomanip>
+using namespace std;
+float a;
+float b;
+float area;
+
+void read()
+{
+	cout << "Give me a: ";
+	cin >> a;
+	cout << "Give me b: ";
+	cin >> b;
+}
+
+void Area(float x, float y)
+{
+	area = x * y;
+}
+
+void show()
+{
+cout << fixed;
+cout << setprecision(2);
+cout << "Rectangular area = " << area << endl;
+}
+
+int main()
+{
+	read();
+	Area(a, b);
+	show();
+	system("PAUSE");
+	return 0;
+}
