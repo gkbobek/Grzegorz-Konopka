@@ -1,0 +1,30 @@
+// MK_1_4.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który oblicza objętość kuli o promieniu r.
+Wartość promienia wprowadzamy z klawiatury. W programie należy przyjąć, że r jest typu float (rzeczywistego).
+Dla zmiennych r oraz objetosc należy przyjąć format wyświetlania ich na ekranie z dokładnością dwóch miejsc po kropce.*/
+
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+#define _USE_MATH_DEFINES
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	float r;
+	float volume;
+	cout << "This program will give u a volume of a sphere!";
+	cout << "Give me a radius: ";
+	cin >> r;
+	cin.get();
+	cout << fixed;
+	cout << setprecision(2);
+	cout << "Radius = " << r << endl;
+	volume = 4 / 3 * M_PI*pow(r, 3);
+	cout << "Volume of sphere = " << volume;
+	cin.get();
+  return 0;
+}
+
