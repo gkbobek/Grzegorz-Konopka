@@ -1,0 +1,27 @@
+// MK_2_1.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który dla trzech boków trójkąta a, b i c wprowadzonych z klawiatury sprawdza,
+czy tworzą one trójkąt prostokątny (zakładamy, że a > 0, b > 0, c > 0).*/
+#include "stdafx.h"
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	int a, b, c;
+	cout << "This program will check that triangle has 90 deg. angle!" << endl;
+	cout << "Give me a: ";
+	cin >> a;
+	cout << "Give me b: ";
+	cin >> b;
+	cout << "Give me c: ";
+	cin >> c;
+	cin.get();
+	if (pow(a, 2) + pow(b, 2) == pow(c, 2))
+		cout << "This triangle has 90 deg. angle!";
+	else
+		cout << "This triangle hasn't 90 deg. angle!";
+	cin.get();
+  return 0;
+}
