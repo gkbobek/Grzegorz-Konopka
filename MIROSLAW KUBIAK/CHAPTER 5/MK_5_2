@@ -1,0 +1,31 @@
+// MK_5_2.cpp : Defines the entry point for the console application.
+//
+/*Napisz program obliczający pole prostokąta. Powinien on zawierać jeden podprogram: bezparametrową funkcję pole prostokata,
+w której zawarty będzie algorytm obliczania pola.Wartości boków a i b wprowadzamy z klawiatury. W programie należy założyć,
+że zmienne a, b oraz pole są typu float (rzeczywistego) i są zmiennymi lokalnymi.
+Należy dla nich przyjąć format wyświetlania ich z dwoma miejscami po kropce.*/
+
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+#include <iomanip>
+using namespace std;
+void area()
+{
+	cout << "Give me a: ";
+	float a, b;
+	cin >> a;
+	cout << "Give me b: ";
+	cin >> b;
+	float area = a * b;
+	cout << fixed;
+	cout << setprecision(2);
+	cout << "Rectangular area = " << area << endl;
+}
+
+int main()
+{
+	area();
+	system("PAUSE");
+	return 0;
+}
