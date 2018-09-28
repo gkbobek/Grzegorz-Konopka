@@ -1,0 +1,40 @@
+// MK_2_2.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który z wykorzystaniem instrukcji warunkowej if oblicza pierwiastki równania kwadratowego ax2+bx+c = 0, gdzie zmienne a, b, c to liczby rzeczywiste wprowadzane z klawiatury.
+Dla zmiennych a, b, c, x1 oraz x2 należy przyjąć format wyświetlania ich z dokładnością dwóch miejsc po kropce.*/
+#include "stdafx.h"
+#include <iomanip>
+#include <math.h>
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	double a, b, c,x1,x2, delta;
+	cout << "ax^2+bx+c = 0" << endl << endl;
+	cout << "Give me a coefficient: ";
+	cin >> a;
+	cout << "Givce me b coefficient: ";
+	cin >> b;
+	cout << "Give me c: ";
+	cin >> c;
+	cin.get();
+	delta = pow(b, 2) - 4 * a*c;
+	if (delta > 0)
+		{
+			x1 = (-b - sqrt(delta)) / (2 * a);
+			x2 = (-b + sqrt(delta)) / (2 * a);
+			cout << "X1 = " << x1 << endl;
+			cout << "X2 = " << x2;
+		}
+	else if (delta == 0)
+		{
+		x1 = -b / (2 * a);
+		cout << "X = " << x1;
+		}
+	else
+	cout << "Solution doesnt exist!";
+	cin.get();
+  return 0;
+}
