@@ -1,0 +1,30 @@
+// chapter4_7.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+using namespace std;
+struct pizzas
+{
+	string str;
+	unsigned short diameter;
+	float weight;
+};
+
+int main()
+{
+	pizzas one;
+	cout << "Podaj nazwe pizzy: ";
+	getline(cin, one.str);
+	cout << "Podaj srednice pizzy: ";
+	cin >> one.diameter;
+	cout << "Podaj wage pizzy: ";
+	cin >> one.weight;
+	cout << one.str << endl;
+	cout << one.diameter << endl;
+	cout << one.weight << endl;
+	cin.get();
+	cin.get();
+  return 0;
+}
