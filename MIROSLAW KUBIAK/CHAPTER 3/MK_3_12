@@ -1,0 +1,22 @@
+// MK_3_12.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który za pomocą instrukcji while sumuje liczby parzyste w przedziale od 1 do 100.*/
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int sum = 0;
+	int i = 1;
+	cout << "This program will sum numbers from 1 to 100" << endl;
+	while (i <= 100)
+	{
+		if (i % 2 == 0)
+			sum += i;
+	i++;
+	}
+	cout << "Sum = " << sum;
+	cin.get();
+	return 0;
+}
