@@ -1,0 +1,22 @@
+// chapter3_5.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	unsigned long long int world;
+	unsigned long long int poland;
+	unsigned long long percent;
+	cout << "Podaj liczbe ludnosci swiata: ";
+	cin >> world;
+	cout << "Podaj liczbe ludnosci Polski: ";
+	cin >> poland;
+	percent = (poland * 100) / world;
+	cout << "Populacja Polski stanowi: " << percent << "% populacji swiata.";
+	cin.get();
+	cin.get();
+	return 0;
+}
