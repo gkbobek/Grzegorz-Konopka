@@ -1,6 +1,7 @@
 // MK_1_1.cpp : Defines the entry point for the console application.
 //
-/*Napisz program, który oblicza pole prostokąta. Wartości boków a i b wprowadzamy z klawiatury. W programie należy przyjąć, że zmienne a i b oraz pole są typu float (rzeczywistego).
+/*Napisz program, który oblicza pole prostokąta. Wartości boków a i b wprowadzamy z klawiatury.
+W programie należy przyjąć, że zmienne a i b oraz pole są typu float (rzeczywistego).
 Przyjmujemy format wyświetlania ich na ekranie z dokładnością dwóch miejsc po kropce.*/
 
 #include "stdafx.h"
