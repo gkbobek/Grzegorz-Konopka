@@ -1,0 +1,22 @@
+// chapter3_4.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	unsigned long long int sek;
+	cout << "Podaj liczbe sekund: ";
+	cin >> sek;
+	const  unsigned long long int minuta = 60;
+	const  unsigned long long int godzina = minuta * 60;
+	const  unsigned long long int dzien = godzina * 24;
+	const  unsigned long long int rok = dzien * 365;
+	cout << sek / rok << " r. " << (sek - rok) / dzien << " dz. " << (sek - rok - dzien) / godzina << " godz. ";
+  cout << (sek - rok - dzien - godzina) / minuta << " min. " << sek - (rok - dzien - godzina - minuta) << " s." << endl;
+	cin.get();
+	cin.get();
+	return 0;
+}
