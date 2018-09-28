@@ -1,0 +1,39 @@
+// MK_3_23.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który wyświetla duże litery alfabetu od A do Z i od Z do A, z wykorzystaniem pętli do ... while.*/
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int character;
+	character = 'A';
+	do
+	{
+		char character_project = character;
+		cout << character_project;
+		if (character == 'Z')
+			cout << ".";
+		else
+			cout << ", ";
+		character++;
+	}
+	while (character <= 'Z');
+	cout << endl << endl << endl;
+	character = 'Z';
+	do
+	{
+		char character_project = character;
+		cout << character_project;
+		if (character == 'A')
+		cout << ".";
+		else
+		cout << ", ";
+		character--;
+	}
+	while (character >= 'A');
+	cin.get();
+	return 0;
+}
