@@ -1,0 +1,26 @@
+// chapter4_3.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main()
+{
+	const int ArSize = 20;
+	char name[ArSize];
+	char surname[ArSize];
+	char all[40];
+	cout << "Podaj swoje imie: ";
+	cin.get(name, ArSize);
+	cin.get();
+	cout << "Podaj swoje nazwisko: ";
+	cin.get(surname, ArSize).get();
+	strcat_s(surname, ", ");
+	strcpy_s(all, surname);
+	strcat_s(all, name);
+	cout << "Oto informacje zestawione w jeden napis: " << all << endl;
+	cin.get();
+	return 0;
+}
