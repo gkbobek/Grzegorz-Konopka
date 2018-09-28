@@ -1,0 +1,18 @@
+// MK_4_2.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który w 10-elementowej tablicy jednowymiarowej o nazwie dane umieszcza liczby od 9 do 0 (zobacz poniżej jej reprezentację graficzną).*/
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int table[10];
+	for (int i = 9; i >= 0 ; i--)
+	{
+		table[i] = i;
+		cout << "table[" << i << "] = " << table[i] << endl;
+	}
+	cin.get();
+  return 0;
+}
