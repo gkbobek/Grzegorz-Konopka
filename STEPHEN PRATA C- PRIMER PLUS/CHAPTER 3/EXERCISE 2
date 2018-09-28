@@ -1,0 +1,41 @@
+// chapter3_2.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int foot;
+	int inch;
+	int pounds;
+	const int foot_to_inches = 12;
+	const  float pounds_to_kg = 2.2;
+	const  float inch_to_cm = 2.54;
+	cout << "Podaj wage w stopach i calach: ";
+	cin >> foot;
+	cout << " ";
+	cin >> inch;
+	cout << "Twoj wzrost w cm to: " << ((foot * foot_to_inches) + inch) * inch_to_cm << endl;
+	cout << "Podaj wage w funtach: ";
+	cin >> pounds;
+	cout << "Twoja waga w kilogrmach: " << pounds / pounds_to_kg << endl;
+	cout << "Twoje BMI wynosi: " << (pounds / pounds_to_kg) / (((((foot * foot_to_inches) + inch) * inch_to_cm) * 0.01) * ((((foot * foot_to_inches) + inch) * inch_to_cm)* 0.01)) << endl;
+	double BMI = (pounds / pounds_to_kg) / (((((foot * foot_to_inches) + inch) * inch_to_cm) * 0.01) * ((((foot * foot_to_inches) + inch) * inch_to_cm)* 0.01));
+	if (BMI < 18.5)
+	{
+		cout << "Niedowaga";
+	}
+	else if (BMI >= 18.5)
+	{
+		cout << "Prawidlowa waga";
+	}
+	else (BMI >= 25)
+	{
+		cout << "Nadwaga";
+	};
+	cin.get();
+	cin.get();
+  return 0;
+}
