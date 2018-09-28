@@ -1,0 +1,23 @@
+// MK_3_19.cpp : Defines the entry point for the console application.
+//
+/*Napisz program wyświetlający tabliczkę mnożenia dla liczb od 1 do 100 z wykorzystaniem podwójnej pętli for.*/
+
+#include "stdafx.h"
+#include <iostream>
+unsigned int const n = 10;
+using namespace std;
+
+int main()
+{
+	int columns;
+	int rows;
+	cout << "Multiplication table: " << endl << endl << endl;
+	for (columns = 1; columns <= n; columns++)
+	{
+		for (rows = 1; rows <= n; rows++)
+			cout << columns * rows << "\t";
+		cout << endl;
+	}
+	cin.get();
+  return 0;
+}
