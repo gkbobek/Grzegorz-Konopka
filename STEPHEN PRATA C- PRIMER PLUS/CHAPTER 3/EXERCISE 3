@@ -1,0 +1,26 @@
+// chapter3_3.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int stopnie;
+	int minuty;
+	int sek;
+	cout << "Podaj dlugosc w stopniach, minutach i sekundach." << endl;
+	cout << "Podaj stopnie: ";
+	cin >> stopnie;
+	cout << "Podaj minuty: ";
+	cin >> minuty;
+	cout << "Podaj sekundy: ";
+	cin >> sek;
+	double converted = (double (sek) / 3600) +  (double (minuty) / 60) +  double (stopnie);
+  // rzutowanie danych typu int na double w celu poprawnego wyswietlania wyniku
+	cout << stopnie << " st. " << minuty << " min. " << sek << " sek. = " << converted;
+	cin.get();
+	cin.get();
+  return 0;
+}
