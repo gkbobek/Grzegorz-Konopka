@@ -1,0 +1,28 @@
+// MK_3_20.cpp : Defines the entry point for the console application.
+//
+/*Napisz program wyświetlający tabliczkę mnożenia dla liczb od 1 do 100 z wykorzystaniem podwójnej pętli do ... while.*/
+#include "stdafx.h"
+#include <iostream>
+unsigned int const n = 10;
+using namespace std;
+
+int main()
+{
+	int columns;
+	int rows;
+	cout << "Multiplication table: " << endl << endl << endl;
+	rows = 1;
+	do
+	{
+		columns = 1;
+		do
+		{
+			cout << columns * rows << "\t";
+			columns++;
+		} while (columns <= n);
+		rows++;
+		cout << endl;
+	} while (rows <= n);
+	cin.get();
+	return 0;
+}
