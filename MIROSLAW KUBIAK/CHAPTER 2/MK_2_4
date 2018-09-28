@@ -1,0 +1,34 @@
+// MK_2_4.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który oblicza wartość x z równania ax+b = c. Wartości a, b i c należą do zbioru liczb rzeczywistych i są wprowadzane z klawiatury.
+Dodatkowo należy zabezpieczyć program na wypadek sytuacji, kiedy wprowadzona wartość a jest równa zero. Dla zmiennych a, b, c oraz x należy przyjąć format wyświetlania ich z dokładnością dwóch miejsc po kropce.*/
+#include "stdafx.h"
+#include <iomanip>
+#include <math.h>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double a, b, c, x;
+	cout << "ax+b = c" << endl << endl;
+	cout << "Give me a coefficient: ";
+	cin >> a;
+	if (a == 0)
+	{
+		cout << "That won be a linear equatiton!";
+	}
+	else
+	{
+		cout << "Givce me b coefficient: ";
+		cin >> b;
+		cout << "Givce me c coefficient: ";
+		cin >> c;
+		cout << fixed << setprecision(2) << "a = " << a << "\tb = " << b << endl;
+		cin.get();
+		x = (c - b) / a;
+		cout << "X = " << x;
+		cin.get();
+	}
+	return 0;
+}
