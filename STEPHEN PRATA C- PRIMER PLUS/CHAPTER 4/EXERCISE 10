@@ -1,0 +1,28 @@
+// chapter4_10.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <array>
+using namespace std;
+
+int main()
+{
+	unsigned short const x = 3;
+	array<float, x> a = {};
+	cout << "Podaj swoje czasy z biegu na 100 m: " << endl;
+	cout << "Podaj pierwszy czas: ";
+	cin >> a[0];
+	cout << "Podaj drugi czas: ";
+	cin >> a[1];
+	cout << "Podaj trzeci czas: ";
+	cin >> a[2];
+	cout << "Twoje czasy: " << endl;
+	cout << "Pierwszy czas: " << a[0] << endl;
+	cout << "Drugi czas: " << a[1] << endl;
+	cout << "Trzeci czas: " << a[2] << endl;
+	cout << "Twoja średnia z trzech czasow to: " << (a[0] + a[1] + a[2]) / x;
+	cin.get();
+	cin.get();
+  return 0;
+}
