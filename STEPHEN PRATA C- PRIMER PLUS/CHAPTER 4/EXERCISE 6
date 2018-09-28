@@ -1,0 +1,36 @@
+// chapter4_6.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+struct Batonik
+{
+	char name[20];
+	float weight;
+	unsigned short kcal;
+};
+using namespace std;
+
+int main()
+{
+	Batonik snack[3] =
+	{
+
+	{"Mocha Much",2.6,350},
+	{"Snickers",2.1,300},
+	{"Mars", 3.5, 450}
+
+	};
+
+	cout << "Nazwa: " << snack[0].name << endl;
+	cout << "Waga: " << snack[0].weight << endl;
+	cout << "Ilosc kalorii: " << snack[0].kcal << endl;
+	cout << "Nazwa: " << snack[1].name << endl;
+	cout << "Waga: " << snack[1].weight << endl;
+	cout << "Ilosc kalorii: " << snack[1].kcal << endl;
+	cout << "Nazwa: " << snack[2].name << endl;
+	cout << "Waga: " << snack[2].weight << endl;
+	cout << "Ilosc kalorii: " << snack[2].kcal << endl;
+	cin.get();
+	return 0;
+}
