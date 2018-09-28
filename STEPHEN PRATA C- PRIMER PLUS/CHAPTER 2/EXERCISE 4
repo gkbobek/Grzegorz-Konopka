@@ -1,0 +1,21 @@
+// chapter2_4.cpp : Defines the entry point for the console application.
+// Napisz program, który prosi użytkownika o wproawdzenie wieku, a następnie wyświetla wiek użytkownika wyrażony  miesiącach, jak tutaj:
+// Podaj sój wiek: 29
+// Twój wiek  w miesiącach wynosi 348.
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int wiek;
+	int miesiace;
+	cout << "Podaj iwoj wiek: ";
+	cin >> wiek;
+	miesiace = wiek * 12;
+	cout << "Twoj wiek  w miesiacach wynosi: " << miesiace << endl;
+	cin.get();
+	cin.get();
+  return 0;
+}
