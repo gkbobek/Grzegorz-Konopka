@@ -1,0 +1,19 @@
+// chapter2_2.cpp : Defines the entry point for the console application.
+// Napisz program w C++, który prosi o podanie odległości w milach morskich i zamienia ją na metry (jedna mila morska to 1852 metry).
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double miles;
+	double converted;
+	cout << "Podaj odleglosc w milach morskich: ";
+	cin >> miles;
+	converted = miles * 1852;
+	cout << miles << " to " << converted << " m.";
+	cin.get();
+	cin.get();
+  return 0;
+}
