@@ -1,0 +1,31 @@
+// chapter4_1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	const unsigned short rozmiar = 30;
+	char imie[rozmiar];
+	char nazwisko[rozmiar];
+	unsigned short wiek;
+	unsigned short ocena;
+	cout << "Jak masz na imie? ";
+	cin.get(imie,rozmiar);
+	cin.get();
+	cout << "Jak masz na nazwisko? ";
+	cin.get(nazwisko, rozmiar);
+	cin.get();
+	cout << "Ile masz lat? ";
+	cin >> wiek;
+	cout << "Na jaka ocene zasalugujesz? ";
+	cin >> ocena;
+	cout << "Nazwisko: " << nazwisko << ", " << imie << endl;
+	cout << "Ocena: " << ocena - 1 << endl;
+	cout << "Wiek: " << wiek << endl;
+	cin.get();
+	cin.get();
+  return 0;
+}
