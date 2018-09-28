@@ -1,0 +1,25 @@
+// MK_1_1.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który oblicza pole prostokąta. Wartości boków a i b wprowadzamy z klawiatury. W programie należy przyjąć, że zmienne a i b oraz pole są typu float (rzeczywistego).
+Przyjmujemy format wyświetlania ich na ekranie z dokładnością dwóch miejsc po kropce.*/
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	float a, b, area;
+	cout << "Give me a: ";
+	cin >> a;
+	cout << "Give me b: ";
+	cin >> b;
+	cin.get();
+	area = a * b;
+	cout << "Area of rectangle = " << fixed << setprecision(2) << area;
+	cin.get();
+    return 0;
+}
+
