@@ -1,0 +1,27 @@
+// chapter2_7.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+void konwersja(int godzina,int minuta);
+
+int main()
+{
+	int godzina;
+	int minuta;
+	cout << "Podaj liczbe godzin: ";
+	cin >> godzina;
+	cout << "Podaj liczbe minut: ";
+	cin >> minuta;
+	konwersja(godzina,minuta);
+	cin.get();
+	cin.get();
+  return 0;
+}
+void konwersja(int godzina,int minuta)
+{
+	int godzina1;
+	int minuta1;
+	cout << godzina << ":" << minuta;
+}
