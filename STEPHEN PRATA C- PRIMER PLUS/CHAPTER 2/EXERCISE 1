@@ -1,0 +1,15 @@
+// chapter2_1.cpp : Defines the entry point for the console application.
+// Napisz program wypisujący nazwisko i adres autora (nie musi być prawdziwew)
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "Konopka Grzegorz" << endl;
+	cout << "84-239 Bolszewo, ul. Nieznana";
+	cin.get();
+	cin.get();
+  return 0;
+}
