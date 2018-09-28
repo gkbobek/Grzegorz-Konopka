@@ -1,0 +1,19 @@
+// MK_3_13.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który za pomocą instrukcji for sumuje liczby nieparzyste z przedzialu od 1 do 100.*/
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int sum = 0;
+	for (int i = 1; i <= 100; i++)
+	{
+		if (i % 2 != 0)
+			sum += i;
+	}
+	cout << "Sum of odd numbers from 1 to 100: " << sum;
+	cin.get();
+  return 0;
+}
