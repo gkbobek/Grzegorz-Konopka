@@ -1,0 +1,25 @@
+// chapter2_5.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+int fahrenheit(int);
+using namespace std;
+
+int main()
+{
+	int celsjusz;
+	cout << "Podaj temperature w stopniach Celsjusza: ";
+	cin >> celsjusz;
+	int konwersja = fahrenheit(celsjusz);
+	cout << celsjusz << " st. Celsjusza to " << konwersja << " st. Fahrenheita" << endl;
+	cin.get();
+	cin.get();
+  return 0;
+}
+
+int fahrenheit(int c)
+{
+	int fahrenheit = 1.8 * c + 32;
+	return fahrenheit;
+}
