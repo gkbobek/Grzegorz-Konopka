@@ -1,0 +1,23 @@
+// chapter4_4.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	string name;
+	string surname;
+	cout << "Podaj swoje imie: ";
+	getline(cin,name);
+	cin.get();
+	cout << "Podaj swoje nazwisko: ";
+	getline(cin,surname);
+	string all = (surname + ", ") + name;
+	cout << "Oto informacje zestawione w jeden napis: " << all << endl;
+	cin.get();
+	cin.get();
+	return 0;
+}
