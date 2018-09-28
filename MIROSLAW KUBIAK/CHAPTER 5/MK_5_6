@@ -1,0 +1,62 @@
+// MK_5_6.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który w tablicy 10×10 umieszcza losowo na przekątnej cyfry od 0 do 9, a poza nią zera.
+Dodatkowo oblicza on sumę liczb znajdujących się na przekątnej.
+Program powinien zawierać trzy bezparametrowe funkcje: czytaj_dane(), przetworz_dane() i wyswietl_wynik().
+Funkcja czytaj_dane() umieszcza dane w tablicy, przetworz_dane() oblicza sumę liczb znajdujących się na przekątnej,
+natomiast funkcja wyswietl_wynik() prezentuje zawartość tablicy na ekranie monitora.*/
+
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+#include <time.h>
+#include <stdlib.h>
+
+const int Size = 10;
+int tab[Size][Size];
+using namespace std;
+void read();
+void process();
+void end();
+
+int main()
+{
+	read();
+	process();
+	end();
+	system("PAUSE");
+    return 0;
+}
+
+void read()
+{
+	srand(time(NULL));
+	int iSecret = rand() % 10 + 1;
+	for (int i = 0; i < Size; i++)
+	{
+		int iSecret = rand() % 10 + 1;
+		for (int j = 0; j < Size; j++)
+			if (i == j)
+				tab[i][j] = iSecret;
+			else
+				tab[i][j] = 0;
+	}
+
+}
+void process()
+{
+	int sum = 0;
+	for (int i = 0; i < Size; i++)
+		sum += tab[i][i];
+	cout << "Sum of no zero elements = " << sum << endl;
+}
+void end()
+{
+	for (int i = 0; i < Size; i++)
+	{
+		for (int j = 0; j < Size; j++)
+			cout << tab[i][j] << "\t";
+		cout << endl;
+	}
+}
