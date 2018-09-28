@@ -1,0 +1,16 @@
+// MK_3_1.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który za pomocą instrukcji for dla danych wartości x zmieniających się od 0 do 10 oblicza wartość funkcji y = 3x.	*/
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "This program will give you f(x) = 3x for X (0 - 10)" << endl;
+	int x, y;
+	for (x = 0; x <= 10; x++)
+		cout << "f(" << x <<") = " << 3 * x << endl;
+	cin.get();
+  return 0;
+}
