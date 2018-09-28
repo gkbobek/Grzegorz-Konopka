@@ -1,0 +1,19 @@
+// MK_1_5.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który oblicza wynik dzielenia całkowitego bez reszty dla dwóch liczb całkowitych*/
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b;
+	cout << " Give me a integer: ";
+	cin >> a;
+	cout << "Give me b integer: ";
+	cin >> b;
+	cin.get();
+	cout << "Divide = " << a / b;
+	cin.get();
+  return 0;
+}
