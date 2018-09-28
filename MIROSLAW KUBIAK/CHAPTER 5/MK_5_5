@@ -1,0 +1,82 @@
+// MK_5_5.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który z wykorzystaniem instrukcji wyboru switch ... case oblicza pierwiastki równania kwadratowego ax2+bx+c = 0,
+gdzie zmienne a, b oraz c to liczby rzeczywiste wprowadzane z klawiatury.
+Dla zmiennych a, b, c, x1 oraz x2 należy przyjąć format wyświetlania ich z dwoma miejscami po kropce.
+Program powinien zawierać trzy bezparametrowe funkcje: czytaj_dane(), przetworz_dane()i wyswietl_wynik().*/
+
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+#include <stdlib.h>
+using namespace std;
+int a;
+int b;
+int c;
+double x1;
+double x2;
+int squareNumber;
+void readData();
+void coundData(int x, int y, int z);
+void showData();
+
+int main()
+{
+	readData();
+	coundData(a,b,c);
+	showData();
+	system("PAUSE");
+    return 0;
+}
+
+void readData()
+{
+	cout << "Give me a  \"a\" coefficient: ";
+	cin >> a;
+	while (a == 0)
+	{
+		cout << "Wrong coefficient, a cannot be \"0\"!" << endl;
+		cin.clear();
+		cin >> a;
+	}
+	cout << "Give me a \"b\" coefficient: ";
+	cin >> b;
+	cout << "Give me a \"c\" coefficient: ";
+	cin >> c;
+}
+void coundData(int x, int y, int z)
+{
+	double delta = (b*b) - (4 * a*c);
+	if (delta < 0)
+		squareNumber = 0;
+	if (delta == 0)
+		squareNumber = 1;
+	if (delta > 0)
+		squareNumber = 2;
+	switch (squareNumber)
+	{
+	case 1:
+		x1 = (-b)/(2*a);
+		break;
+	case 2:
+		x1 = (-b - sqrt(delta)) / (2 * a);
+		x2 = (-b + sqrt(delta)) / (2 * a);
+		break;
+	};
+}
+void showData()
+{
+	switch (squareNumber)
+	{
+	case 0:
+		cout << "No roots!" << endl;
+		break;
+	case 1:
+		cout << "x = " << x1 << endl;
+		break;
+	case 2:
+		cout << "x1 = " << x1 << endl;
+		cout << "x2 = " << x2 << endl;
+		break;
+	};
+}
