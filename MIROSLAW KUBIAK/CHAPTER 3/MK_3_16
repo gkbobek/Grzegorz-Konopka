@@ -1,0 +1,31 @@
+// MK_3_16.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który za pomocą instrukcji for znajduje największą i najmniejszą liczbę ze zbioru n liczb losowych z przedziału od 0 do 99 oraz oblicza ich średnią (w zadaniu n = 5).*/
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	int rand_number;
+	float sum = 0;
+	int hMany;
+	cout << "This program will sum 5 random numbers from 0 to 99" << endl;
+	cout << "How many numbers do you want to roll?: ";
+	cin >> hMany;
+	cin.get();
+	srand(time(NULL));
+	for (int i = 0; i <= hMany; i++)
+	{
+		rand_number = rand() % 99;
+		cout << rand_number << endl;
+		sum += rand_number;
+	}
+	cout << "Sum of random numbers = " << sum << endl;
+	cout << "Arithmetic average = " << fixed << setprecision(2) << sum / hMany;
+	cin.get();
+  return 0;
+}
