@@ -1,0 +1,15 @@
+// MK_3_4.cpp : Defines the entry point for the console application.
+//
+/*Napisz program, który za pomocą instrukcji for wyświetla liczby całkowite od 1 do 20.*/
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "This program will give you numbers from 1 to 20." << endl;
+	for (int i = 1; i <= 20; i++)
+		cout << i << endl;
+	cin.get();
+  return 0;
+}
