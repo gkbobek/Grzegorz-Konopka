@@ -1,5 +1,3 @@
-// MK_5_4.cpp : Defines the entry point for the console application.
-//
 /*Napisz program, który oblicza pole prostokąta. Powinien on zawierać trzy bezparametrowe funkcje: czytaj_dane(),
 przetworz_ dane() oraz wyswietl_wynik().Wartości boków a i b wprowadzamy z klawiatury. W programie należy założyć,
 że zmienne a, b oraz pole są typu float (rzeczywistego) i są zmiennymi globalnymi.
