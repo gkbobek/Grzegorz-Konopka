@@ -7,7 +7,7 @@ void func();
 int main()
 {
 	func();
-    return 0;
+    	return 0;
 	system("PAUSE");
 }
 
