@@ -1,0 +1,19 @@
+#include "stdafx.h"
+#include <iostream>
+#include <math.h>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	double number;
+	cout << "Give me a number: ";
+	cin >> number;
+	cin.get();
+	cout << fixed << setprecision(2);
+	cout << number;
+	cin.get();
+  return 0;
+}
+
