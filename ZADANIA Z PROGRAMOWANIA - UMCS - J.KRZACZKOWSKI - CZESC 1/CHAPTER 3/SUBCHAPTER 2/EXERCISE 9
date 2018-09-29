@@ -7,7 +7,7 @@ int main()
 {
 	cout << alloc();
 	cin.get();
-    return 0;
+    	return 0;
 }
 
 int *alloc()
