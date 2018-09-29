@@ -33,6 +33,6 @@ int main()
 	else
 		cout << "This quadratic equation doesn't have solution in real numbers area!!!";
 	cin.get();
-    return 0;
+    	return 0;
 }
 
