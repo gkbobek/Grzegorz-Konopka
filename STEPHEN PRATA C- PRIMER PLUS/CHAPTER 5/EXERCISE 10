@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int rows;
+	cout << "How many rows do you want?: ";
+	cin >> rows;
+	for (int i = 1; i <= rows; i++)
+	{
+		for (int k = 1; i <= rows - i ; i++)
+			cout << ".";
+		for (int g = rows - k; j <= rows; j++)
+			cout << "*";
+		cout << endl;
+	};
+	cin.get();
+	cin.get();
+	cin.get();
+	cin.get();
+  return 0;
+}
