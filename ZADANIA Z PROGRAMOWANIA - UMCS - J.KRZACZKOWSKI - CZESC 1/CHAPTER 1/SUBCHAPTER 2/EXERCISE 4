@@ -7,6 +7,6 @@ int main()
 	int a = 'a';
 	cout << "Oto zapisana liczba: " << a;
 	cin.get();
-  return 0;
+  	return 0;
 }
 
