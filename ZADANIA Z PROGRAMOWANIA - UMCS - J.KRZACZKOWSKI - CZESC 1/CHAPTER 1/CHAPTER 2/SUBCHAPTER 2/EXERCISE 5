@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+int power(int x);
+
+int main()
+{
+	cout << "Give me a to what POWER do you want sum 2: ";
+	int n;
+	cin >> n;
+	cout << "2 to POWER " << n << " = " << power(n) << endl;
+	system("PAUSE");
+	return 0;
+}
+
+int power(int x)
+{
+	int power = 1;
+	for (int i = 1; i <= x; i++)
+		power *= 2;
+	return power;
+}
