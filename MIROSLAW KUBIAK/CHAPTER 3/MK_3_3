@@ -1,6 +1,5 @@
-// MK_3_3.cpp : Defines the entry point for the console application.
-//
 /*Napisz program, który za pomocą instrukcji while dla danych wartości x zmieniających się od 0 do 10 oblicza wartość funkcji y = 3x.*/
+
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
@@ -16,5 +15,5 @@ int main()
 		x++;
 	}
 	cin.get();
-  return 0;
+  	return 0;
 }
