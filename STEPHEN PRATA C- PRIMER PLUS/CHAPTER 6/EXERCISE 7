@@ -1,0 +1,36 @@
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <cctype>
+#include <stdlib.h>
+using namespace std;
+
+int main()
+{
+	string word;
+	int vowels = 0;
+	int consonant = 0;
+	int others = 0;
+	cout << "Type sentence, if u want to stop type 'q': ";
+	cin >> word;
+	while ((word != "q" ) && (word != "Q"))
+	{
+		if (isalpha(word[0]))
+		{
+			{
+				if ((word[0] == 'a') || (word[0] == 'e') || (word[0] == 'i') || (word[0] == 'o') || (word[0] == 'u') || (word[0] == 'y'))
+					vowels++;
+				else
+					consonant++;
+			}
+		}
+		else
+			others++;
+		cin >> word;
+	}
+	cout << vowels << "word starting with vowels." << endl;
+	cout << consonant << "word starting with consonant." << endl;
+	cout << others << "word starting with others" << endl;
+	system("PAUSE");
+  return 0;
+}
