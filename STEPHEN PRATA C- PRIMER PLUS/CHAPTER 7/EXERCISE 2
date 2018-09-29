@@ -1,0 +1,66 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+const int limit = 10;
+int fill_golf(int golf[], const int limit);
+void show_golf(const int golf[],int size);
+void sum_golf(const int golf[], int size);
+
+int main()
+{
+	int golf[limit];
+	int size = fill_golf(golf, limit);
+	system("CLS");
+	show_golf(golf, size);
+	sum_golf(golf, size);
+	system("PAUSE");
+  return 0;
+}
+
+int fill_golf(int golf[],const int limit)
+{
+	cout << "Program will give u sum of your golf results. Type 'q' if u want to stop!" << endl;
+	int num;
+	char character;
+	int i;
+	for (i = 0; i < limit; i++)
+	{
+		cout << "Give me " << i + 1 << " result: ";
+		cin.get(character);
+		golf[i] = character;
+		if (golf[0] == 'q')
+		{
+			cout << "You dont have any results!" << endl;
+			break;
+		}
+		else if (golf[i] == 'q')
+			break;
+		else
+		{
+			golf[i] = static_cast<int>(character);
+		}
+	}
+	return i;
+}
+
+void show_golf(const int golf[], int size)
+{
+	for (int j = 0; j < size; j++)
+		cout << "R. " << j + 1 << "\t";
+	cout << endl;
+	for (int i = 0; i < size; i++)
+	{
+		cout << golf[i] << "\t";
+	}
+	cout << endl << endl;
+}
+
+void sum_golf(const int golf[], int size)
+{
+	int i;
+	double sum = 0;
+	for (i = 0; i < size; i++)
+		sum += golf[i];
+	cout << "Arihmetic average of " << i << " results: " << sum / i << endl << endl;
+}
