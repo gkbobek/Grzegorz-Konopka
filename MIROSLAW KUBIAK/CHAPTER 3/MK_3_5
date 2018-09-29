@@ -1,6 +1,5 @@
-// MK_3_5.cpp : Defines the entry point for the console application.
-//
 /*Napisz program, który za pomocą instrukcji do ... while wyświetla liczby całkowite od 1 do 20.*/
+
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
@@ -16,5 +15,5 @@ int main()
 	}
 	while (x <= 20);
 	cin.get();
-  return 0;
+  	return 0;
 }
