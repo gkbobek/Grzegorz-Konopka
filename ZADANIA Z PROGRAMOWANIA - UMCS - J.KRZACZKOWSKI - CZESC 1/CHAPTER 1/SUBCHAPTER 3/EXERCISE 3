@@ -1,0 +1,33 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x;
+	int y;
+	int z;
+	cout << "Give me 2 numbers. Program will tell you which one is bigger\n";
+	cout << "Give me first: ";
+	cin >> x;
+	cout << "Give me second: ";
+	cin >> y;
+	cout << "Give me third: ";
+	cin >> z;
+	cin.get();
+	if (x < y && y < z)
+	
+	else if (x == y)
+	{ 
+		cout << "First and second are equal!" << endl;
+		cout << z;
+	}
+		
+	else if (x > y && x > z)
+		cout << x;
+	else if (y > z && y > x)
+		cout << y;
+	cin.get();
+	return 0;
+}
+
