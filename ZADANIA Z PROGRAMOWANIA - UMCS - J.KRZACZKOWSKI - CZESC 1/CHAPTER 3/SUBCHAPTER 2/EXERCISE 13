@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+double function(double (*acc)(int n), int x);
+
+int main()
+{
+	int a = 5;
+	function(double(*acc)(int n), a);
+	cin.get();
+    return 0;
+}
+
+double function(double(*acc)(int n), int x)
+{
+	return acc(a);
+}
