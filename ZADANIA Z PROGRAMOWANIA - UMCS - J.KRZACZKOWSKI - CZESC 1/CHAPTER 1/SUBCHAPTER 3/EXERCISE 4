@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	int x, y;
+	cout << "Give me 2 integers." << endl;
+	cout << "Give me first: ";
+	cin >> x;
+	cin.get();
+	cout << "Give me second: ";
+	cin >> y;
+	cin.get();
+	x = abs(x);
+	y = abs(y);
+	if (x > y)
+		cout << "Absolute of first is bigger!";
+	else if (y > x)
+		cout << "Absolute of second is bigger!";
+	else
+	{
+		cout << "They are the same!" << endl;
+		cout << "Absolute is: " << x;
+	}
+	cin.get();
+    return 0;
+}
+
