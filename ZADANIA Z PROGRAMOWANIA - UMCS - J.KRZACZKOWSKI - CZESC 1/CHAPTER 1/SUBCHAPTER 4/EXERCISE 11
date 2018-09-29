@@ -1,0 +1,89 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	long long int a, b, c, d, x, choice;
+	cout << "Give me a number: ";
+	cin >> a;
+	cout << "Give me a number: ";
+	cin >> b;
+	cout << "Give me a number: ";
+	cin >> c;
+	cout << "Give me a number: ";
+	cin >> d;
+	cout << endl;
+	cout << endl;
+	cout << "Press 1 if u want to find the lowest natural X:" << endl;
+	cout << "|a| * x2 + b * x + c > d" << endl;
+	cout << "Press 2 if u want to find the lowest natural X:" << endl;
+	cout << "5*x2+a*x+b < c" << endl;
+	cout << "Press 3 if u want to find the lowest natural X:" << endl;
+	cout << "5*x2+a*x+b <= c" << endl;
+	cin >> choice;
+
+	switch (choice)
+	{
+		case 1:
+		{
+			x = 0;
+			if ((a != 0) || (b > 0))
+			{
+				/*for (x = 0; abs(a)*pow(x, 2) + b * x + c <= d; x++);*/
+				do
+				{
+					x++;
+				} while (abs(a)*pow(x, 2) + b * x + c <= d);
+				cout << "X = " << x;
+			}
+			else
+				cout << "That X doesnt exist!!!";
+		}
+		break;
+		case 2:
+		{
+			x = 0;
+			if ((c == 0) || (b > 0))
+			{
+				/*for (x = 0; abs(a)*pow(x, 2) + b * x + c <= d; x++);*/
+				do
+				{
+					x++;
+				} while (5*pow(x,2)+a*x+b <= c);
+				cout << "X = " << x;
+			}
+			else
+				cout << "That X doesnt exist!!!";
+		}
+		break;
+		case 3:
+		{
+			x = 0;
+			if ((c == 0) || (b > 0))
+			{
+				/*for (x = 0; abs(a)*pow(x, 2) + b * x + c <= d; x++);*/
+				do
+				{
+					x++;
+				} while (5 * pow(x, 2) + a * x + b <= c);
+				cout << "X = " << x;
+			}
+			else
+				cout << "That X doesnt exist!!!";
+		}
+		default:
+		{
+			cout << "You didnt pick 1, 2 or 3!!!" << endl;
+			cin.get();
+			exit(0);
+		}
+	}
+	cin.get();
+	cin.get();
+	cin.get();
+    return 0;
+}
