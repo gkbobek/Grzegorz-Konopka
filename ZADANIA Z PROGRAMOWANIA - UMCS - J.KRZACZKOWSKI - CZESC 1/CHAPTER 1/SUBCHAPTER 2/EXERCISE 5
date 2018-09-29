@@ -1,0 +1,15 @@
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+#define _USE_MATH_DEFINES
+#include <cmath>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	cout << fixed << setprecision(10) << M_PI << endl;
+	cin.get();
+  return 0;
+}
+
