@@ -1,0 +1,76 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+const int max = 30;
+const int length = 3;
+struct Batonik
+{
+	char name[max];
+	double weight;
+	int kcal;
+};
+void batonsFill(Batonik &refference, const char* name = "Millenium Munch", double weight = 2.85, int kcal = 350);
+void batonsShow(const Batonik & refference);
+
+int main()
+{ 
+	char name[max];
+	double weight;
+	int kcal;
+	int i = 0;
+	Batonik candy[length];
+		while (i < length)
+		{
+			cout << "Enter name of " << i + 1 << " candybar (press q to exit): ";
+			cin.getline(name, max);
+			if ((name[0] == 'q') || (name[0] == 'Q'))
+				break;
+			else
+			{
+				cout << "Enter weight of " << i + 1 << " candybar: ";
+				cin >> weight;
+				while ((weight == 0) && (!cin.good()))
+				{
+					cin.clear();
+					cin.ignore(100, '\n');
+					cout << "Bad input, please enter the weight again: ";
+				}
+				cout << "Enter kcal of " << i + 1 << " candybar: ";
+				cin >> kcal;
+				while (kcal == 0)
+				{
+					cin.clear();
+					cin.ignore(100, '\n');
+					cout << "Bad input, please enter the calories as an integer: ";
+				}
+				cin.get();
+				batonsFill(candy[i], name, weight, kcal);
+				i++;
+			}
+		}
+	for (int j = 0; j < i; j++)
+	{
+		cout << "Candybar " << j + 1 << endl;
+		batonsShow(candy[j]);
+	}
+	cout << "Uninitialized candybar" << endl;
+	Batonik normal;
+	batonsFill(normal);
+	batonsShow(normal);
+	system("PAUSE");
+  return 0;
+}
+
+void batonsFill(Batonik &refference, const char* name, double weight, int kcal)
+{
+	strcpy_s(refference.name, name);
+	refference.weight = weight;
+	refference.kcal = kcal;
+}
+void batonsShow(const Batonik & refference)
+{
+	cout << "Name: " << refference.name << endl;
+	cout << "Weight: " << refference.weight << endl;
+	cout << "Kcal: " << refference.kcal << endl;
+}
