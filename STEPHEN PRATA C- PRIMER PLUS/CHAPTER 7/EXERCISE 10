@@ -1,0 +1,81 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+double sum(double x, double y);
+double difference(double x, double y);
+double multiply(double x, double y);
+double divide(double x, double y);
+double calculate(double a, double b, double (*func)(double,double));
+double x;
+double y;
+void choiceFunc();
+
+int main()
+{	
+	int choice;
+	for (;;)
+	{
+		cout << "SMALL CALCULATOR" << endl;
+		cout << "Type 1 if u want to sum two numbers" << endl;
+		cout << "Type 2 if u want to difference two numbers" << endl;
+		cout << "Type 3 if u want to multiply two numbers" << endl;
+		cout << "Type 4 if u want to divide two numbers " << endl << endl;
+		cout << "Type 5 if u want to STOP " << endl;
+		cin >> choice;
+		switch (choice)
+		{
+		case 1:
+			choiceFunc();
+			cout << calculate(x, y, *sum) << endl;
+			break;
+		case 2:
+			choiceFunc();
+			cout << calculate(x, y, *difference) << endl;
+			break;
+		case 3:
+			choiceFunc();
+			cout << calculate(x, y, *multiply) << endl;
+			break;
+		case 4:
+			choiceFunc();;
+			cout << calculate(x, y, *divide) << endl;
+			break;
+		case 5:
+			exit(0);
+		default:
+			cout << "You didn't type 1, 2 or 3!!!";
+			cin.get();
+		}
+	}
+    return 0;
+}
+
+double sum(double x, double y)
+{
+	return x + y;
+}
+double difference(double x, double y)
+{
+	return x - y;
+}
+double multiply(double x, double y)
+{
+	return x * y;
+}
+double divide(double x, double y)
+{
+	return x / y;
+}
+double calculate(double a, double b, double(*func)(double, double))
+{
+	return (*func)(a,b);
+}
+void choiceFunc()
+{
+	cout << "Give me 1st number: ";
+	cin >> x;
+	cout << "Give me 2nd number: ";
+	cin >> y;
+}
+
