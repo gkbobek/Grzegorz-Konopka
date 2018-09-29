@@ -1,7 +1,7 @@
-// MK_2_3.cpp : Defines the entry point for the console application.
-//
-/*Napisz program, który z wykorzystaniem instrukcji wyboru switch oblicza pierwiastki równania kwadratowego ax2+bx+c = 0, gdzie zmienne a, b, c to liczby rzeczywiste wprowadzane z klawiatury.
+/*Napisz program, który z wykorzystaniem instrukcji wyboru switch oblicza pierwiastki równania kwadratowego ax2+bx+c = 0,
+gdzie zmienne a, b, c to liczby rzeczywiste wprowadzane z klawiatury.
 Dla zmiennych a, b, c, x1 oraz x2 należy przyjąć format wyświetlania ich na ekranie z dokładnością dwóch miejsc po kropce.*/
+
 #include "stdafx.h"
 #include <iomanip>
 #include <math.h>
