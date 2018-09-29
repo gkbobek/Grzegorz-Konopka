@@ -1,5 +1,3 @@
-// MK_5_3.cpp : Defines the entry point for the console application.
-//
 /*Napisz program obliczający pole prostokąta. Powinien on zawierać jeden podprogram: funkcję pole_prostokata(),
 do której parametry przekazywane są przez wartość. Wartości boków a i b wprowadzamy z klawiatury.W programie należy założyć,
 że zmienne a, b oraz pole są typu float (rzeczywistego) i są zmiennymi globalnymi.
