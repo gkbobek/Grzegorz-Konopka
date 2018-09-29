@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	char ender[] = "done";
+	char word[50];
+	int how = 0;
+	cout << "Type a few words, if u want to stop type \"done\"" << endl;
+	do
+		{
+		cin >> word;
+		how++;
+	} while (strcmp(word, ender));
+			{
+			cout << "You typed \"done\" so program ended!" << endl;
+			cout << "You typed: " << how - 1 << " words!";
+			}
+	cin.get();
+	cin.get();
+  return 0;
+}
