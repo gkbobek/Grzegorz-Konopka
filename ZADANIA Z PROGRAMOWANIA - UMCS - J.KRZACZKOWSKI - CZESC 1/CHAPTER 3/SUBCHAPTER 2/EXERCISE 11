@@ -1,0 +1,20 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+int *alloc(unsigned int n);
+
+int main()
+{
+	cout << "Give me n: ";
+	unsigned int n;
+	cin >> n;
+	cout << "Adress: " << *alloc(n) << endl;
+	system("PAUSE");
+    return 0;
+}
+
+int *alloc(unsigned int n)
+{
+	return new int[n];
+}
