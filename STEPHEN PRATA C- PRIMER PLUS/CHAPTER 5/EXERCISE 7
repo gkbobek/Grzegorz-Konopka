@@ -1,0 +1,34 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	struct car
+	{
+		char name[30];
+		int year;
+	};
+	int car_numbers;
+	cout << "How many cars do you want to collect? ";
+	cin >> car_numbers;
+	cin.get();
+	car  * collection = new car[car_numbers];
+	int count = 0;
+	while (count < car_numbers)
+		{
+		cout << "Car name " << count + 1 << ": ";
+		cin.get(collection[count].name, 30).get();
+		cout << "Date of production  " << count + 1 << " car: ";
+		cin >> collection[count].year;
+		cin.get();
+		count += 1;
+		};
+	cout << "Cars catalog:" << endl;
+	for (count = 0; count < car_numbers; count++)
+	{
+		cout << collection[count].year << " " << collection[count].name << endl;
+	};
+	cin.get();
+  return 0;
+}
