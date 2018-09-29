@@ -1,0 +1,16 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+double *alloc();
+
+int main()
+{
+	cout << alloc();
+	cin.get();
+	return 0;
+}
+
+double *alloc()
+{
+	return new double;
+}
