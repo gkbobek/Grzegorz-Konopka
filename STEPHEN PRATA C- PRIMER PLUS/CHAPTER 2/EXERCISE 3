@@ -1,12 +1,3 @@
-// chapter2_3.cpp : Defines the entry point for the console application.
-// Napisz program w C++ ykorzystujący trzy funkcje (jedną z nich będzie main()), dający następujące wyniki:
-// Entliczek pentliczek
-// Entliczek pentliczek
-// Czerwony stoliczek
-// Czerwony stoliczek
-// Pierwsze dwa wiersze ma wygenerowac pierwsza funkcja (wywołana dwukrotnie)
-// Następnie druga funkcja także wywołana dwukrotnie
-
 #include "stdafx.h"
 #include <iostream>
 void pentliczek();
@@ -18,7 +9,7 @@ int main()
 	stoliczek();
 	cin.get();
 	cin.get();
-  return 0;
+  	return 0;
 }
 void pentliczek()
 {
