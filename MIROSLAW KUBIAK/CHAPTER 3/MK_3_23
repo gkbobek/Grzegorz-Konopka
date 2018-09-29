@@ -1,5 +1,3 @@
-// MK_3_23.cpp : Defines the entry point for the console application.
-//
 /*Napisz program, który wyświetla duże litery alfabetu od A do Z i od Z do A, z wykorzystaniem pętli do ... while.*/
 
 #include "stdafx.h"
