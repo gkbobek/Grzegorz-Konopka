@@ -1,0 +1,52 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	const int hyear = 3;
+	const int hmonths = 12;
+	const char *months[hmonths] =
+	{
+		"January",
+		"Febuary",
+		"March",
+		"April",
+		"May",
+		"June",
+		"July",
+		"August",
+		"September",
+		"October",
+		"November",
+		"December"
+	};
+	const char *year[hyear] =
+	{
+		"2016",
+		"2017",
+		"2018"
+	};
+	int sales[hyear][hmonths];
+	int sum[hyear];
+	int suma = 0;
+	for (int j = 0; j < hyear; j++)
+	{
+		year[j];
+		for (int i = 0; i < hmonths; i++)
+		{
+			cout << "Quantity of sold books: " << year[j] << " in:  " << months[i] <<" = ";
+			cin >> sales[j][i];
+			sum[j] += sales[j][i];
+		};
+	};
+	for (int i = 0; i < 3; i++)
+	{
+		suma += sum[i];
+		cout << "Sprzedaz w roku " << year[i] << " = " << sum[i] << " sztuk! " << endl;
+	}
+	cout << "Sprzedaz wyniosla lacznie: " << suma << " sztuk!" << endl;
+	cin.get();
+	cin.get();
+	return 0;
+}
