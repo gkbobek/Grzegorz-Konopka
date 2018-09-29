@@ -1,0 +1,20 @@
+#include <stdafx.h>
+#include <iostream>
+using namespace std;
+int function(const int *a, const int *b);
+
+int main()
+{
+	const int *a = 5;
+	const int *b = 3;
+	cout << "Sum of 2 const = ";
+	function(&a, &b);
+	cin.get();
+	return 0;
+}
+
+int function(const int *a,const int *b)
+{
+	int sum = *a + *b;
+	return sum;
+}
