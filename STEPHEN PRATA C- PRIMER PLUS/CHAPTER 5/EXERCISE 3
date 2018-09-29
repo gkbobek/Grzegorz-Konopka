@@ -1,0 +1,24 @@
+// chapter5_3.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int temp;
+	int sum = 0;
+	cout << "Podaj liczbe (0 konczy dzialanie programu): ";
+	cin >> temp;
+	while (temp != 0)
+	{
+		sum += temp;
+		cout << "Suma = " << sum << endl;
+		cin >> temp;
+	}
+	cout << "Podales 0, koniec programu!";
+	cin.get();
+	cin.get();
+	return 0;
+}
