@@ -1,0 +1,19 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int number;
+	cout << "Give me a number: ";
+	cin >> number;
+	cin.get();
+	cout << "Absolute value of that number: ";
+	if (number <= 0)
+	cout << number * (-1);
+	else 
+	cout << number;
+	cin.get();
+  return 0;
+}
+
