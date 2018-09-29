@@ -15,6 +15,6 @@ int main()
 	for (int i = m; i < k; i += n)
 		cout << i << endl;
 	cin.get();
-    return 0;
+    	return 0;
 }
 
