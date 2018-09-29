@@ -11,7 +11,7 @@ int main()
 	cin >> n;
 	cout << "Adress: " << *alloc(n) << endl;
 	system("PAUSE");
-    return 0;
+    	return 0;
 }
 
 int *alloc(unsigned int n)
