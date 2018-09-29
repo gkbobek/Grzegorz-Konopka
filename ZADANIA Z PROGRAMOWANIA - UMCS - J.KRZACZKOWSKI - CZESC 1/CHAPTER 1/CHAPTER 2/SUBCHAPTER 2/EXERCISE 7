@@ -1,0 +1,37 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+float power(float n, float m);
+using namespace std;
+
+int main()
+{
+	cout << "Gie me n: ";
+	float n;
+	cin >> n;
+	cout << "Give me m: ";
+	float m;
+	cin >> m;
+	cout << n << " to " << m << " = " << power(n, m) << endl;
+	system("PAUSE");
+	return 0;
+}
+
+float power(float n, float m)
+{
+	float pow = 1;
+	if (m >= 0)
+	{
+		for (float i = 1; i <= m; i++)
+			pow *= n;
+		return pow;
+	}
+	else
+	{
+		m = m * (-1);
+		for (float i = 1; i <= m; i++)
+			pow *= n;
+		return 1 / pow;
+	}
+}
+
