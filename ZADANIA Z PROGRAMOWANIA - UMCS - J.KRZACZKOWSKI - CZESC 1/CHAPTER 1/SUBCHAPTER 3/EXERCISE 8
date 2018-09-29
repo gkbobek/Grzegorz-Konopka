@@ -1,0 +1,55 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	enum figura {kwadrat = 1, prostokat = 2, trojkat = 3};
+	cout << "This program will give u area of quadrat, rectangle, triangle!" << endl;
+	cout << "Type 1 if u want area of quadrat" << endl;
+	cout << "Type 2 if u want area of rectangle" << endl;
+	cout << "Type 3 if u want area of triangle" << endl << endl << endl;
+	cout << "Your type: ";
+	int wybor;
+	int a;
+	int b;
+	int h;
+	cin >> wybor;
+	switch (wybor)
+	{
+	case 1:
+		{
+			cout << "Give me a length = ";
+			cin >> a;
+			system("CLS");
+			cout << "Area of quadrat = " << a * 2;
+		}
+		break;
+		case 2:
+		{
+			cout << "Give me a length = ";
+			cin >> a;
+			cout << "Give me a width = ";
+			cin >> b;
+			system("CLS");
+			cout << "Area of quadrat = " << a * b;
+		}
+		break;
+		case 3:
+		{
+			cout << "Give me a base = ";
+			cin >> a;
+			cout << "Give me a height = ";
+			cin >> h;
+			system("CLS");
+			cout << "Area of quadrat = " << (a * h) / 2;
+		}
+		break;
+		default:
+		cout << "You didn't type 1, 2 or 3!!!";
+	}
+	cin.get();
+	cin.get();
+    return 0; 
+}
+
