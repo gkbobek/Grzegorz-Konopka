@@ -1,0 +1,43 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int w = 0;
+	cout << "This program will count triangle's area" << endl;
+	cout << "If you have base and height press 1, if u have sides press 2: ";
+	cin >> w;
+	cin.get();
+	if (w == 1)
+	{
+		int a;
+		cout << "Give me a base: ";
+		cin >> a;
+		cin.get();
+		cout << "Give me a height: ";
+		int h;
+		cin >> h;
+		cout << "Area of that triangle is = " << (a*h) / 2;
+	}
+	else if (w == 2)
+	{
+		int a;
+		cout << "Give me a first side: ";
+		cin >> a;
+		cout << "Give me a second side: ";
+		int b;
+		cin >> b;
+		int c;
+		cout << "Give me a third side: ";
+		cin >> c;
+		cin.get();
+		cout << "Area of that triangle is = " << sqrt(((a + b + c) / 2)*(((a + b + c) / 2) - a)*(((a + b + c) / 2) - b)*(((a + b + c) / 2) - c));
+	}
+	else
+		cout << "I told you, press 1 or 2!";
+	cin.get();
+	cin.get();
+    return 0;
+}
+
