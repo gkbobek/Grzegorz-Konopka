@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+int power(int n, int m);
+using namespace std;
+
+int main()
+{
+	cout << "Gie me n: ";
+	unsigned int n;
+	cin >> n;
+	cout << "Give me m: ";
+	unsigned int m;
+	cin >> m;
+	cout << n << " to " << m << " = " << power(n, m) << endl;
+	system("PAUSE");
+    return 0;
+}
+
+int power(int n, int m)
+{
+	int pow = 1;
+	for (int i = 1; i <= m; i++)
+	{
+		pow *= n;
+	}
+	return pow;
+}
+
