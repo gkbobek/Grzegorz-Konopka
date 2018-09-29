@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+int absolute(int x);
+
+int main()
+{
+	cout << "This program will give u abs from x." << endl;
+	cout << "Type x: ";
+	int x;
+	cin >> x;
+	int abs;
+	abs = absolute(x);
+	cout << "Absolute of: " << x << " is: " << abs << endl;
+	cout << "See you." << endl;
+	system("PAUSE");
+    return 0;
+}
+
+int absolute(int x)
+{
+	if (x > 0)
+		return x;
+	else
+		return x * (-1);
+}
+
