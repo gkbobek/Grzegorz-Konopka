@@ -1,0 +1,37 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+void nd(int x);
+using namespace std;
+
+int main()
+{
+	cout << "This program will give u greatest divisor lower than your integer." << endl;
+	int n;
+	cout << "Give me integer: ";
+	cin >> n;
+	cout << "Greatest divisor lover than " << n << " is: ";
+	nd(n);
+	cout << endl;
+	system("PAUSE");
+    return 0;
+}
+
+void nd(int x)
+{
+	if ((x == 0) || (x == 1) || (x == 2))
+		cout << "Greates divisor doesn't exist!";
+	else if (x > 2)
+	{
+		for (int k = (x-1); k > 2; k--)
+		{
+			int c;
+			c = x % k;
+			if (c == 0)
+			{
+				cout << k;
+				break;
+			}
+		}
+	}
+}
