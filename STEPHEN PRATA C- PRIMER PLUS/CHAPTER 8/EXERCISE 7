@@ -1,16 +1,11 @@
 #include "stdafx.h"
-// tempover.cpp -- przeciążanie szablonów
 #include <iostream>
-
 template <typename T>            // szablon A
 void ShowArray(T arr[], int n);
-
 template <typename T>            // szablon B
 void ShowArray(T * arr[], int n);
-
 template <typename T>            // szablon A
 void ShowArray(T arr[], int n);
-
 template <typename T>            // szablon B
 void ShowArray(T * arr[], int n);
 
