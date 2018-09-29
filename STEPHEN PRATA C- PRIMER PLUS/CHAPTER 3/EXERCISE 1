@@ -1,6 +1,3 @@
-// chapter3_1.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
@@ -13,8 +10,8 @@ int main()
 	cout << "Podaj swoj wzrost w cm:";
 	cin >> height_cm;
 	cout << "Twoj wzrost w stopach to: " << int (height_cm * cm_to_inches) / 12;
-  cout << "  " << int (height_cm * cm_to_inches) % inches_to_foot << "'" << endl;
+  	cout << "  " << int (height_cm * cm_to_inches) % inches_to_foot << "'" << endl;
 	cin.get();
 	cin.get();
-  return 0;
+  	return 0;
 }
