@@ -1,0 +1,39 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+double sqrt(double n);
+double sum(double n);
+using namespace std;
+
+int main()
+{
+	cout << "This program will give u sqrt from n." << endl;
+	cout << "Type n: ";
+	int n;
+	cin >> n;
+	cout << "sum " << n << " is " << sum(n) << endl;
+	system("PAUSE");
+	return 0;
+}
+
+double sqrt(double n)
+{
+	double sqrt = 0;
+	for (int i = 1; i <= n; i++)
+	{
+		if (i*i <= n)
+			sqrt = i;
+	}
+	return sqrt;
+}
+
+double sum(double n)
+{
+	double sum = 0;
+	for (int i = 1; i <= n; i++)
+	{
+		sum += sqrt(n);
+	}
+	return sum;
+}
+
