@@ -8,15 +8,15 @@ int main()
 	cout << "Give me a positive rational number: ";
 	cin >> number;
 	cin.get();
-if (number >= 0)
-{
-	number = sqrt(number);
-	cout << "Square of that number = " << number;
-}
-else
-	{
+	if (number >= 0)
+		{
+		number = sqrt(number);
+		cout << "Square of that number = " << number;
+		}
+	else
+		{
 		cout << "I TOLD YOU! GIVE A POSITIVE RATIONAL NUMBER!";
-	}
+		}
     	return 0;
 }
 
