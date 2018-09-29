@@ -1,0 +1,41 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+const int limit = 5;
+int function (int table[], int size);
+int main()
+{
+	int table[limit];
+	cout << "Highest value: " << function(table, limit) << endl;
+	system("PAUSE");
+    return 0;
+}
+
+int function(int table[], int size)
+{
+	cout << "Give me 5 integers, i will give u the higest one!, if you want to stop type 'q'" << endl;
+	int m;
+	int temp;
+	char znak;
+	for (int i = 0; i < limit; i++)
+	{
+		cout << "Give me " << i + 1 << " integer: ";
+		cin >> znak;
+		if (znak == 'q')
+			break;
+		else
+		{
+			temp = static_cast<int>(znak);
+			temp = temp - 48;
+			table[i] = temp;
+			m = table[0];
+			for (int i = 1; i < limit; i++)
+			{
+				if (m <= table[i])
+					m = table[i];
+			}
+		}
+	}
+	return m;
+}
