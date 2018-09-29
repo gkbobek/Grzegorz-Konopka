@@ -1,7 +1,7 @@
-// MK_4_3.cpp : Defines the entry point for the console application.
-//
-/*Napisz program, który w zadeklarowanej tablicy dwuwymiarowej 10×10 o nazwie macierz umieszcza na przekątnej liczbę 1, a poza przekątną 0.
+/*Napisz program, który w zadeklarowanej tablicy dwuwymiarowej 10×10 o nazwie macierz umieszcza na przekątnej liczbę 1,
+a poza przekątną 0.
 Dodatkowo program powinien obliczać sumę elementów wyróżnionych w tablicy, tj. tych znajdujących się na jej przekątnej.*/
+
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
@@ -30,5 +30,5 @@ int main()
 		cout << endl;
 }
 	cin.get();
-  return 0;
+  	return 0;
 }
