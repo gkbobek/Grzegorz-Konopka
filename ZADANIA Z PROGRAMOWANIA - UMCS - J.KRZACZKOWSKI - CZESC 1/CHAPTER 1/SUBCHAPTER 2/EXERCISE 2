@@ -24,6 +24,6 @@ int main()
 	cout << "s" << endl;
 	cout << "!" << endl;
 	cin.get();
-  return 0;
+  	return 0;
 }
 
