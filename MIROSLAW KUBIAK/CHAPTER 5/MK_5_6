@@ -24,7 +24,7 @@ int main()
 	process();
 	end();
 	system("PAUSE");
-    return 0;
+    	return 0;
 }
 
 void read()
