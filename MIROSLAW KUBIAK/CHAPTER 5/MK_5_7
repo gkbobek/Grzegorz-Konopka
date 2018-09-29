@@ -1,5 +1,3 @@
-// MK_5_7.cpp : Defines the entry point for the console application.
-//
 /*Napisz program, który sortuje n liczb wczytanych z klawiatury (w zadaniu jest ich sześć).
 Powinien on zawierać trzy bezparametrowe funkcje: czytaj_dane(), przetworz_dane() i wyswietl_wynik().
 Funkcja czytaj_dane() czyta dane wprowadzone z klawiatury i umieszcza je w tablicy o nazwie liczby.
