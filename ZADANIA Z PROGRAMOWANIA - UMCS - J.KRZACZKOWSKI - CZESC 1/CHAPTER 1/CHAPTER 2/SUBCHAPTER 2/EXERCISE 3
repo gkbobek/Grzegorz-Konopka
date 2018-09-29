@@ -14,7 +14,7 @@ int main()
 	nd(n);
 	cout << endl;
 	system("PAUSE");
-    return 0;
+    	return 0;
 }
 
 void nd(int x)
