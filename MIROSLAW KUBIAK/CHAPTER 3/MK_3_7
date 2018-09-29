@@ -1,6 +1,5 @@
-// MK_3_7.cpp : Defines the entry point for the console application.
-//
 /*Napisz program, który za pomocą instrukcji for sumuje liczby całkowite od 1 do 100*/
+
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
@@ -13,5 +12,5 @@ int main()
 		sum += i;
 	cout << sum;
 	cin.get();
-  return 0;
+  	return 0;
 }
