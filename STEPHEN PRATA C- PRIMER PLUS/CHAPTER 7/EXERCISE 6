@@ -1,0 +1,60 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+const int limit = 10;
+int fill_array(double table[], int limit);
+void show_array(const double table[], int size);
+void reverse_array(double table[], int size);
+
+int main()
+{
+	double table[limit];
+	int size = fill_array(table, limit);
+	show_array(table, size);
+	reverse_array(table, size);
+	show_array(table, size);
+	system("PAUSE");
+  return 0;
+}
+
+int fill_array(double table[], int limit)
+{
+	cout << "Type value to collect, press q to stop" << endl;
+	int i;
+	int x;
+	for (i = 0; i < limit; i++)
+	{
+		cout << "Give " << i+1 << " element: ";
+		cin >> x;
+		if (!cin)
+		{
+			cout << "Goodbye" << endl;
+			break;
+		}
+		else
+			table[i] = x;
+	}
+	return i;
+}
+void show_array(const double table[], int size)
+{
+	for (int i = 0; i < size; i++)
+		cout << i+1 << " element: " << table[i] <<endl;
+}
+
+void reverse_array(double table[], int size)
+{
+	int i = 0;
+	double helper;
+	size--;
+	while (i < size)
+	{
+
+		helper = table[i];
+		table[i] = table[size];
+		table[size] = helper;
+		i++;
+		size--;
+	}
+}
