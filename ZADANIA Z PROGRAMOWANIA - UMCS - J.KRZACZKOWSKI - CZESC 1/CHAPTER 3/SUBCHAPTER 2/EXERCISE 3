@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+void function(int *a, int *b);
+
+int main()
+{
+	cout << "Program will give u highest value of 2 integers: " << endl;
+	int a;
+	int b;
+	cout << "Give me 1 integer: ";
+	cin >> a;
+	cout << "Give me 2 integer: ";
+	cin >> b;
+	cin.get();
+	function(&a, &b);
+	cin.get();
+	return 0;
+}
+
+void function(int *a, int *b)
+{
+	int m= *a;
+	*a = *b;
+	*b = m;
+	cout << "1 integer now is: " << *a << endl;
+	cout << "2 integer now is: " << *b << endl;
+}
