@@ -1,0 +1,20 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	unsigned short n, m, k;
+	cout << "Give me first natural integer: ";
+	cin >> n;
+	cout << "Give me second natural integer: ";
+	cin >> m;
+	cout << "Give me third natural integer: ";
+	cin >> k;
+	cin.get();
+	for (int i = m; i < k; i += n)
+		cout << i << endl;
+	cin.get();
+    return 0;
+}
+
