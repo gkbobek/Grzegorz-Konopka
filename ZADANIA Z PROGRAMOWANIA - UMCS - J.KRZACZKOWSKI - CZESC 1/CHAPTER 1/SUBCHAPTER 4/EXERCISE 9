@@ -21,6 +21,6 @@ int main()
 	while (m != n);
 	cout << "NWD = " << n;
 	cin.get();
-    return 0;
+    	return 0;
 }
 
