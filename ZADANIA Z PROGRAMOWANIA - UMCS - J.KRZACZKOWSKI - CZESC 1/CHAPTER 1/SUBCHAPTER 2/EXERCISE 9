@@ -17,6 +17,6 @@ else
 	{
 		cout << "I TOLD YOU! GIVE A POSITIVE RATIONAL NUMBER!";
 	}
-    return 0;
+    	return 0;
 }
 
