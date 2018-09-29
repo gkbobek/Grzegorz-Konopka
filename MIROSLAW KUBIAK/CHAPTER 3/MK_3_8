@@ -1,6 +1,5 @@
-// MK_3_8.cpp : Defines the entry point for the console application.
-//
 /*Napisz program, który za pomocą instrukcji do ... while sumuje liczby całkowite od 1 do 100.*/
+
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
