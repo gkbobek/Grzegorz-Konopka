@@ -1,0 +1,41 @@
+#include "stdafx.h"
+#include <iostream>
+#include <cctype>
+#include <stdlib.h>
+using namespace std;
+
+int main()
+{
+	char letter;
+	cout << "r) roslinozerca \t\t p) pianista" << endl;
+	cout << "d) drzewo \t\t g) gra" << endl;
+	cout << "Give me a r, p, d or g: ";
+	cin >> letter;
+	if (isupper(letter))
+		letter = tolower(letter);
+	while ((letter != 'r') && (letter != 'p') && (letter != 'd') && (letter != 'g'))
+	{
+		cout << "You didn't give r,p, d or g!" << endl;
+		cin.clear();
+		cin >> letter;
+	}
+	{
+		switch (letter)
+		{
+		case 'r':
+			cout << "Zyrafa to roslinozerca" << endl;
+			break;
+		case 'p':
+			cout << "Fryderyk Chopin to pianista" << endl;
+			break;
+		case 'd':
+			cout << "Klon jest drzewem" << endl;
+			break;
+		case 'g':
+			cout << "PUBG jest gra" << endl;
+			break;
+		}
+	}
+	system("PAUSE");
+  return 0;
+}
