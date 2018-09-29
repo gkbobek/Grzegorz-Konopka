@@ -15,7 +15,7 @@ int main()
 	cin.get();
 	cout << "Higest value is: " << function(&a,&b);
 	cin.get();
-    return 0;
+    	return 0;
 }
 
 int function(int *a, int *b)
