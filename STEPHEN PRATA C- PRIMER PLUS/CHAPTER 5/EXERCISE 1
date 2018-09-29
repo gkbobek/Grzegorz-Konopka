@@ -1,0 +1,30 @@
+// chapter5_1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x;
+	int y;
+	cout << "Podaj pierwsza liczbe: ";
+	cin >> x;
+	cout << "Podaj druga liczbe: ";
+	cin >> y;
+	if (x > y)
+	{
+		cout << "Pierwsza liczba musi byc mniejsza od drugiej!";
+		return 1;
+	};
+	int sum;
+	for (sum = 0; x <= y; ++x)
+		{
+		sum = sum + x;
+		}
+	cout << "Suma = " << sum;
+	cin.get();
+	cin.get();
+  return 0;
+}
