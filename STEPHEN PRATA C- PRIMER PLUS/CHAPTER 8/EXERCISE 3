@@ -1,0 +1,32 @@
+#include "stdafx.h"
+#include <iostream>
+#include <cctype>
+#include <string>
+#include <stdlib.h>
+using namespace std;
+void sentence(string &name);
+
+int main()
+{
+	string word;
+	cout << "Give me a sentence (press q to stop): ";
+	getline(cin, word);
+	while (word[0] != 'q')
+	{
+		sentence(word);
+		cout << word << endl;
+		cout << "Next: ";
+		getline(cin, word);
+	}
+	cout << "Goodbye!" << endl;
+	system("PAUSE");
+  return 0;
+}
+
+void sentence(string &name)
+{
+	for (int i = 0; i < name.size(); i++)
+	{
+		name[i] = toupper(name[i]);
+	}
+}
