@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "B" << endl;
+	cout << "a" << endl;
+	cout << "r" << endl;
+	cout << "d" << endl;
+	cout << "z" << endl;
+	cout << "o" << endl;
+	cout << endl;
+	cout << "d" << endl;
+	cout << "l" << endl;
+	cout << "u" << endl;
+	cout << "g" << endl;
+	cout << "i" << endl;
+	cout << endl;
+	cout << "n" << endl;
+	cout << "a" << endl;
+	cout << "p" << endl;
+	cout << "i" << endl;
+	cout << "s" << endl;
+	cout << "!" << endl;
+	cin.get();
+  return 0;
+}
+
