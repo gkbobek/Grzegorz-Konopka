@@ -1,6 +1,5 @@
-// MK_2_5.cpp : Defines the entry point for the console application.
-//
 /*Napisz program, w którym użytkownik zgaduje liczbę losową z przedziału od 0 do 9 generowaną przez komputer.*/
+
 #include "stdafx.h"
 #include <iomanip>
 #include <iostream>
@@ -32,5 +31,5 @@ int main()
 	cout << "Congratulations! You entered correct number: " << zgad << "!" << endl;
 	cout << "You needed: " << i-1 << " attempts!";
 	cin.get();
-  return 0;
+  	return 0;
 }
