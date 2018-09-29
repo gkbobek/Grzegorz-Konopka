@@ -1,0 +1,19 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	unsigned short n;
+	unsigned short m;
+	cout << "Give me first natural integer: ";
+	cin >> n;
+	cout << "Give me second natural integer: ";
+	cin >> m;
+	for (int i = n; i <= (m*n)+n; i += n)
+	cout << i << endl;
+	cin.get();
+	cin.get();
+    return 0;
+}
+
