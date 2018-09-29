@@ -10,6 +10,6 @@ int main()
 	cin.get();
 	cout << "Integer + 1 = " << integer + 1;
 	cin.get();
-  return 0;
+  	return 0;
 }
 
