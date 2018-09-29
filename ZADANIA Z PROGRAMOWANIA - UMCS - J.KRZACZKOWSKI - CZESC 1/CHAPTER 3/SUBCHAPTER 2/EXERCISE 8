@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+void mix(int &a, int *b);
+
+int main()
+{
+	cout << "Give me a: ";
+	int a;
+	cin >> a;
+	cout << "Give me b: ";
+	int b;
+	cin >> b;
+	system("CLS");
+	cout << "a before = " << a << endl;
+	cout << "b before = " << b << endl;
+	mix(a, &b);
+	system("PAUSE");
+	return 0;
+}
+
+void mix(int &a, int *b)
+{
+	int pom;
+	pom = a;
+	a = *b;
+	*b = pom;
+	cout << "a after = " << a << endl;
+	cout << "b after = " << *b << endl;
+}
