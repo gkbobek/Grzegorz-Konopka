@@ -1,0 +1,20 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+double *alloc(double n);
+
+int main()
+{
+	cout << "Give me n: ";
+	unsigned int n;
+	cin >> n;
+	cout << "Adress: " << *alloc(n) << endl;
+	system("PAUSE");
+	return 0;
+}
+
+double *alloc(double n)
+{
+	return new double[n];
+}
