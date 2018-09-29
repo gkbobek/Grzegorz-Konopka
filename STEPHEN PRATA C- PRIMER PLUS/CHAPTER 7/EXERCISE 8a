@@ -1,0 +1,48 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+// dane stałe
+const int Seasons = 4;
+const int MaxLength = 7;
+const char season[Seasons][MaxLength] =
+{ "Wiosna", "Lato", "Jesien", "Zima" };
+
+// funkcja modyfikująca tablicę typu array
+void fill(double tab[]);
+
+// funkcja przetwarzająca tablicę typu array bez ingerencji w jej zawartość
+void show(const double tab[]);
+struct
+
+int main()
+{
+	double expenses[Seasons];
+	fill(expenses);
+	show(expenses);
+	system("PAUSE");
+	return 0;
+}
+
+void fill(double tab[])
+{
+	using namespace std;
+	for (int i = 0; i < Seasons; i++)
+	{
+		cout << "Podaj wydatki za okres >>" << season[i] << "<<: ";
+		cin >> tab[i];
+	}
+}
+void show(const double tab[])
+{
+	using namespace std;
+	double total = 0.0;
+	cout << "\nWYDATKI\n";
+	for (int i = 0; i < Seasons; i++)
+	{
+		cout << season[i] << ": " << tab[i] << " zł" << endl;
+		total += tab[i];
+	}
+	cout << "Łącznie wydatki roczne: " << total << " zł " << endl;
+}
