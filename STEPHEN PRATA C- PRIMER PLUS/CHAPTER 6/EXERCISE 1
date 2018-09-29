@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include <cctype>
+using namespace std;
+
+int main()
+{
+	char sentence;
+	cout << "Give me a sentence. If you want to stop add \"@\"" << endl;
+	cin.get(sentence);
+	while (cin.good() && (sentence != '@'))
+	{
+		if (islower(sentence))
+			sentence = toupper(sentence);
+		else if (isupper(sentence))
+			sentence = tolower(sentence);
+		else if (isdigit(sentence))
+		{
+			cin.get(sentence);
+			continue;
+		}
+		cout << sentence;
+		cin.get(sentence);
+	}
+	cin.get();
+	cin.get();
+  return 0;
+}
