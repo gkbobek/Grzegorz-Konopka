@@ -1,0 +1,12 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 'a';
+	cout << "Oto zapisana liczba: " << a;
+	cin.get();
+  return 0;
+}
+
