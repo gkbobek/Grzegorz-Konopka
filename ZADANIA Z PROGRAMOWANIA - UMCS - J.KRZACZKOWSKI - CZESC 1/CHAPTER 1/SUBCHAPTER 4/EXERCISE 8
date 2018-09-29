@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "This program will give you Fibonacci sequence.\nType to  what element do you want count: ";
+	cin >> n;
+	cin.get();
+	int * fibonacci = new int[n];
+	fibonacci[0] = 1;
+	fibonacci[1] = 1;
+	if (n >= 3)
+	{
+		for (int i = 2; i <= n; i++)
+		{
+
+			fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+			fibonacci[n] = fibonacci[i];
+		}
+	}
+	else
+		fibonacci[n] = fibonacci[1];
+	cout << "Nr " << n << ": " << fibonacci[n];
+	cin.get();
+	return 0;
+}
