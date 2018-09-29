@@ -1,0 +1,81 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+const int howMany = 5;
+using namespace std;
+template <typename T> void maxnfill(T arr[], int howMany);
+template <typename T> void maxnshow(T arr[], int howMany);
+char * maxnfill(char * arr[], int size);
+template <typename T> T maxn(T arr[], int howMany);
+template <> const char * maxn(const char * arr[], int size);
+
+int main()
+{
+	int arr_int[howMany];
+	double arr_double[howMany];
+	cout << "Integers" << endl;
+	maxnfill(arr_int, howMany);
+	cout << "Double" << endl;
+	char *charray = maxnfill();
+	maxnfill(arr_double, howMany);
+	cout << endl << endl << endl;
+	cout << "Integers" << endl;
+	maxnshow(arr_int, howMany);
+	cout << "Double" << endl;
+	maxnshow(arr_double, howMany);
+	cout << endl << endl << endl;
+	cout << "Maximum of integer: " << maxn(arr_int, howMany) << endl;
+	cout << "Maximum of double: " << maxn(arr_double, howMany) << endl;
+	system("PAUSE");
+	return 0;
+}
+
+template <typename T> void maxnfill(T arr[], int howMany)
+{
+	for (int i = 0; i < howMany; i++)
+	{
+		cout << "Give me " << i + 1 << " element  of " << howMany << ": ";
+		cin >> arr[i];
+	}
+}
+
+template <typename T> void maxnshow(T arr[], int howMany)
+{
+	for (int i = 0; i < howMany; i++)
+	{
+		cout << i + 1 << " element: " << arr[i] << endl;
+	}
+}
+
+
+template <typename T> T maxn(T arr[], int howMany)
+{
+	T temp;
+	temp = arr[0];
+	for (int i = 0; i < howMany; i++)
+	{
+		if (temp < arr[i])
+			temp = arr[i];
+	}
+	return temp;
+}
+
+template <> const char * maxn(const char * arr[], int size)
+{
+	const char * longest = arr[0];
+	for (int i = 0; i < size; i++)
+	{
+		if (strlen(arr[i]) > strlen(longest))
+			longest = arr[i];
+	}
+	return longest;
+}
+
+char * maxnfill (char * arr[], int size)
+{
+	char *nameC = new char[100];
+	std::cout << "\nGive something to char tab: " << std::endl;
+	std::cin.get();
+	std::cin.getline(nameC, 100);
+	return wyrazy;
+}
