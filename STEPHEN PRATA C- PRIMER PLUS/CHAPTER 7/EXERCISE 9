@@ -1,0 +1,92 @@
+#include "stdafx.h"
+#include <stdlib.h>
+#include <iostream>
+using namespace std;
+const int SLEN = 30;
+
+struct student
+{
+	char fullname[SLEN];
+	char hobby[SLEN];
+	int ooplevel;
+};
+
+
+int getinfo(student pa[], int n);
+void display(student st);
+void display2(student *ps);
+void display3(const student pa[], int n);
+
+int main()
+{
+	cout << "How many students do you want to collect: ";
+	int class_size;
+	cin >> class_size;
+		while (cin.get() != '\n')
+			continue;
+	student *ptr_stu = new student[class_size];
+	int entered = getinfo(ptr_stu, class_size);
+	cout << endl << endl << endl;
+	cout << "void display: " << endl;
+	for (int i = 0; i < entered; i++)
+		display(ptr_stu[i]);
+	cout << endl << endl << endl;
+	cout << "void display2: " << endl;
+	for (int i = 0; i < entered; i++)
+		display2(&ptr_stu[i]);
+	cout << endl << endl << endl;
+	cout << "void display3: " << endl;
+	display3(ptr_stu, entered);
+	delete[]ptr_stu;
+	cout << "Done!" << endl;
+	system("PAUSE");
+  return 0;
+}
+
+int getinfo(student pa[], int n)
+{
+	int i;
+	for (i = 0; i < n; i++)
+	{
+		cout << "Give me name of " << i + 1 << " student: ";
+		cin.getline(pa[i].fullname,SLEN);
+		cout << "Give me his/her hobby: ";
+		cin.getline(pa[i].hobby, SLEN);
+		cout << "Give his/her programming level: ";
+		cin >> pa[i].ooplevel;
+		if (!cin)
+		{
+			cin.clear();
+			while (cin.get() != '\n')
+				continue;
+			break;
+		}
+		while (cin.get() != '\n')
+			continue;
+	}
+	return i;
+}
+
+void display(student pt)
+{
+	cout << "Student's name: " << pt.fullname << endl;
+	cout << "Student's hobby: " << pt.hobby << endl;
+	cout << "Student's programming level: " << pt.ooplevel << endl;
+}
+
+void display2(student *ps)
+{
+	cout << "Student's name: " << ps->fullname << endl;
+	cout << "Student's hobby: " << ps->hobby << endl;
+	cout << "Student's programming level: " << ps->ooplevel << endl;
+}
+
+void display3(const student pa[], int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cout << "Student's name: " << pa[i].fullname << endl;
+		cout << "Student's hobby: " << pa[i].hobby << endl;
+		cout << "Student's programming level: " << pa[i].ooplevel << endl;
+	}
+}
