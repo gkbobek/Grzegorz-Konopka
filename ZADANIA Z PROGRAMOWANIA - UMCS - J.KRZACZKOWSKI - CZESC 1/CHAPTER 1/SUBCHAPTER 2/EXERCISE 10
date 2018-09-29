@@ -11,6 +11,6 @@ int main()
 	cout << "ABS(X) = ";
 	cout << abs(x);
 	cin.get();
-  return 0;
+  	return 0;
 }
 
