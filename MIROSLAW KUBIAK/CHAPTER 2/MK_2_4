@@ -1,7 +1,7 @@
-// MK_2_4.cpp : Defines the entry point for the console application.
-//
-/*Napisz program, który oblicza wartość x z równania ax+b = c. Wartości a, b i c należą do zbioru liczb rzeczywistych i są wprowadzane z klawiatury.
-Dodatkowo należy zabezpieczyć program na wypadek sytuacji, kiedy wprowadzona wartość a jest równa zero. Dla zmiennych a, b, c oraz x należy przyjąć format wyświetlania ich z dokładnością dwóch miejsc po kropce.*/
+/*Napisz program, który oblicza wartość x z równania ax+b = c. Wartości a, b i c należą do zbioru liczb rzeczywistych i są wprowadzane
+z klawiatury.Dodatkowo należy zabezpieczyć program na wypadek sytuacji, kiedy wprowadzona wartość a jest równa zero.
+Dla zmiennych a, b, c oraz x należy przyjąć format wyświetlania ich z dokładnością dwóch miejsc po kropce.*/
+
 #include "stdafx.h"
 #include <iomanip>
 #include <math.h>
