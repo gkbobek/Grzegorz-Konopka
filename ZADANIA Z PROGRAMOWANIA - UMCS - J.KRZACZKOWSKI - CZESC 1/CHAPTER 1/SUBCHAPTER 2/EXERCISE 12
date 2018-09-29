@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	float number;
+	cout << "Give me a number: ";
+	cin >> number;
+	cin.get();
+	cout << "This is your number in scientific notation: ";
+	cout << fixed << scientific << number;
+	cin.get();
+  return 0;
+}
+
