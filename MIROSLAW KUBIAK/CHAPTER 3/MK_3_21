@@ -1,6 +1,5 @@
-// MK_3_21.cpp : Defines the entry point for the console application.
-//
 /*Napisz program wyświetlający tabliczkę mnożenia dla liczb od 1 do 100 z wykorzystaniem podwójnej pętli while.*/
+
 #include "stdafx.h"
 #include <iostream>
 unsigned int const n = 10;
