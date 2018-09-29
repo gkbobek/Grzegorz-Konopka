@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	long long int n, m;
+
+	cout << "Give me a first integer: ";
+	cin >> n;
+	long long int sum = 1;
+	cout << "Give me a second number: ";
+	cin >> m;
+	for (long long int i = n; i <= m; i++)
+		sum *= i;
+	cout << sum;
+	cin.get();
+	cin.get();
+    return 0;
+}
+
