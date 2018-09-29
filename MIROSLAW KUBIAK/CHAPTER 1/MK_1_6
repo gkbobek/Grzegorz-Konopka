@@ -1,10 +1,8 @@
-// MK_1_6.cpp : Defines the entry point for the console application.
-//
 /*Napisz program, który oblicza resztę z dzielenia całkowitego dla dwóch liczb całkowitych a = 37 i b = 11.*/
+
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
-
 
 int main()
 {
@@ -16,5 +14,5 @@ int main()
 	cin.get();
 	cout << "Modulo a/b = " << a % b;
 	cin.get();
-    return 0;
+    	return 0;
 }
