@@ -1,0 +1,25 @@
+// chapter5_4.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+const int capital = 10000;
+
+int main()
+{
+	double dafne = 10000;
+	double cleo = 10000;
+	int year;
+	for (year = 0; cleo <= dafne; year++)
+	{
+		dafne += capital * 0.1;
+		cleo += cleo * 0.05;
+	}
+	cout << "Cleo will get the same money or more like Dafne after: " << year << endl;
+	cout << "Cleo earned: " << cleo << endl;
+	cout << "Dafne eraned: " << dafne << endl;
+	cin.get();
+	cin.get();
+  return 0;
+}
