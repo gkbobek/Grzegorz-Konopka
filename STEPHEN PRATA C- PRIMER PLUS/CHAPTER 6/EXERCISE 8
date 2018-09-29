@@ -1,0 +1,44 @@
+#include "stdafx.h"
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+#include <string>
+const int fSize = 60;
+using namespace std;
+
+int main()
+{
+	char filename[fSize];
+	ifstream getFile;
+	cout << "Give me filename: ";
+	cin.getline(filename, fSize);
+	getFile.open(filename);
+	if (!getFile.is_open())
+	{
+		cout << "Error while opening: " << filename << "." << endl;
+		cout << "Shutdown." << endl;
+		/*exit(EXIT_FAILURE);*/
+	}
+	string value;
+	int sign = 0;
+	while (getFile.good())
+	{
+		sign++;
+		getline(getFile, value);
+	}
+	if (getFile.eof())
+		cout << "End of file!" << endl;
+	else if (getFile.fail())
+		cout << "Error during reading file!" << endl;
+	if (sign == 0)
+		cout << "No data in file!" << endl;
+	else
+	{
+		cout << value << endl << endl;
+		cout << value.length() << " elements." << endl;
+		
+	}
+	getFile.close();
+	system("PAUSE");
+  return 0;
+}
