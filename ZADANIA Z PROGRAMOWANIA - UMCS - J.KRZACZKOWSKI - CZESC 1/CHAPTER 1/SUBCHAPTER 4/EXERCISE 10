@@ -16,6 +16,6 @@ int main()
 	}
 	cout << "Approximate sqrt = " << sqrt;
 	cin.get();
-  return 0;
+  	return 0;
 }
 
