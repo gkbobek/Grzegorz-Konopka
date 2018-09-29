@@ -12,7 +12,7 @@ int main()
 	factorial(integer);
 	cout << "Factorial = " << factorial(integer) << endl;
 	system("PAUSE");
-    return 0;
+    	return 0;
 }
 
 int factorial(int x)
