@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	int sqrt = 0;
+	cout << "Give a number: ";
+	cin >> n;
+	cin.get();
+	for (int i = 1; i <= n; i++)
+	{
+		if (i*i <= n)
+		sqrt = i;
+	}
+	cout << "Approximate sqrt = " << sqrt;
+	cin.get();
+  return 0;
+}
+
