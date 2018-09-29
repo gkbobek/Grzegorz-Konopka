@@ -19,6 +19,6 @@ int main()
 	else
 		cout << "They are equal!";
 	cin.get();
-    return 0;
+    	return 0;
 }
 
