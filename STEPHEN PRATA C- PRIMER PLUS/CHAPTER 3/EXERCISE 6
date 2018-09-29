@@ -1,6 +1,3 @@
-// chapter3_6.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
@@ -16,5 +13,5 @@ int main()
 	cout << "Twoje spalanie wynosi: " << (benzpl / dinkm) * 100 << " / 100 km";
 	cin.get();
 	cin.get();
-  return 0;
+  	return 0;
 }
