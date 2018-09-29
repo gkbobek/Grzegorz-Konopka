@@ -1,0 +1,38 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b, c;
+	cout << "This program solves quadratic equation" << endl;
+	cout << "Type X^2 coefficient: ";
+	cin >> a;
+	cout << "Type x coefficient: ";
+	cin >> b;
+	cout << "Enter the free expression: ";
+	cin >> c;
+	cin.get();
+	system("CLS");
+	cout << "Your equation: " << endl;
+	if (b > 0)
+		cout << a << "x^2+" << b << "x" << " = " << c << endl << endl << endl;
+	else
+		cout << a << "x^2" << b << "x" << " = " << c << endl << endl << endl;
+	c = c * (-1);
+	double delta = (b*b) - (4 * a*c);
+	if (delta > 0)
+	{
+		double x1 = ((-1)*b - sqrt(delta)) / 2 * a;
+		double x2 = ((-1)*b + sqrt(delta)) / 2 * a;
+		cout << "X1 = " << x1 << endl;
+		cout << "x2 = " << x2;
+	}
+	else if (delta == 0)
+		double x = (-1)*b / (2 * a);
+	else
+		cout << "This quadratic equation doesn't have solution in real numbers area!!!";
+	cin.get();
+    return 0;
+}
+
