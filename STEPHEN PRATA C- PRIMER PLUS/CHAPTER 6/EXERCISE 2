@@ -1,0 +1,44 @@
+#include "stdafx.h"
+#include <iostream>
+#include <cctype>
+#include <stdlib.h>
+const int maxSize = 10;
+using namespace std;
+
+int main(void)
+{
+	double donations[maxSize];
+	double sum = 0.0;
+	int total = 0;
+	cout << "Give me your donations. You can give max: " << maxSize << " donations!" << endl;
+	for (int i = 0; i < maxSize; i++)
+	{
+		cout << "Give me " << i + 1 << " donation: ";
+		cin >> donations[i];
+		if (cin.good())
+		{
+			donations[i];
+			sum += donations[i];
+			total++;
+		} 
+		else
+		{
+			cin.clear();
+			break;
+		}
+	}
+	cout << endl << endl << endl;
+	for (int i = 0; i < total; i++)
+	cout << "Donation " << i + 1 << ": " << donations[i] << endl;
+	cout << endl << endl << endl;
+	cout << "Average: " << sum/total << endl;
+	cout << "Above average: " << endl;
+	for (int i = 0; i < maxSize; i++)
+	{
+		if (sum / total < donations[i])
+			cout << "Donation " << i + 1 << endl;
+	}
+	cin.get();
+	system("PAUSE");
+  return 0;
+}
