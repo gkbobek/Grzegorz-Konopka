@@ -1,0 +1,15 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int integer;
+	cout << "Give me integer: " << endl;
+	cin >> integer;
+	cin.get();
+	cout << "Integer + 1 = " << integer + 1;
+	cin.get();
+  return 0;
+}
+
