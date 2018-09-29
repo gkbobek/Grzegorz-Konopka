@@ -21,7 +21,7 @@ int main()
 	sometingData();
 	showData();
 	system("PAUSE");
-    return 0;
+    	return 0;
 }
 
 void readData()
