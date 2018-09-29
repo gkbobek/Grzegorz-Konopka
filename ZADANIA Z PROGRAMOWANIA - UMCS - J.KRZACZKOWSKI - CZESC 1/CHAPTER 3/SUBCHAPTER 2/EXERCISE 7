@@ -17,7 +17,7 @@ int main()
 	cout << "b before = " << b << endl;
 	mix(a, &b);
 	system("PAUSE");
-    return 0;
+    	return 0;
 }
 
 void mix(int &a, int *b)
