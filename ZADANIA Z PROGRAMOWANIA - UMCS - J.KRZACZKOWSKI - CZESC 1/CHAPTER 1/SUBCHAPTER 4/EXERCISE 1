@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	unsigned short n;
+	unsigned short m;
+	cout << "Give me first natural number: ";
+	cin >> n;
+	cout << "Give me second natural number: ";
+	cin >> m;
+	cout << endl;
+	cout << endl;
+	if (n < 0 && m < 0)
+		cout << "I told you natural number!!!";
+	else
+	{
+		for (int i = n; i < m; i += n)
+		cout << i << endl;
+	}
+	cin.get();
+	cin.get();
+  return 0;
+}
+
