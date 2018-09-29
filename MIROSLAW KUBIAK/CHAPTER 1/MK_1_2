@@ -1,5 +1,3 @@
-// MK_1_2.cpp : Defines the entry point for the console application.
-//
 /*Napisz program, który wyświetla na ekranie komputera wartość predefiniowanej stałej π = 3,14.
 Należy przyjąć format prezentowania tej stałej, oznaczanej w języku C++ jako M_PI, z dokładnością pięciu miejsc po kropce.*/
 
@@ -15,6 +13,6 @@ int main()
 	cout << "This program will give you PI!";
 	cout << "PI = " << fixed << setprecision(5) << M_PI;
 	cin.get();
-    return 0;
+    	return 0;
 }
 
