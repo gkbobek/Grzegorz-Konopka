@@ -1,0 +1,59 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+const int howMany = 5;
+using namespace std;
+template <typename T> void max5fill(T arr[], int howMany);
+template <typename T> void max5show(T arr[], int howMany);
+template <typename T> T max5(T arr[], int howMany);
+
+int main()
+{
+	int arr_int[howMany];
+	double arr_double[howMany];
+	cout << "Integers" << endl;
+	max5fill(arr_int, howMany);
+	cout << "Double" << endl;
+	max5fill(arr_double, howMany);
+	cout << endl << endl << endl;
+	cout << "Integers" << endl;
+	max5show(arr_int, howMany);
+	cout << "Double" << endl;
+	max5show(arr_double, howMany);
+	cout << endl << endl << endl;
+	cout << "Maximum of integer: " << max5(arr_int, howMany) << endl;
+	cout << "Maximum of double: " << max5(arr_double, howMany) << endl;
+	system("PAUSE");
+	return 0;
+}
+
+
+template <typename T> void max5fill(T arr[], int howMany)
+{
+	for (int i = 0; i < howMany; i++)
+	{
+		cout << "Give me " << i + 1 << " element  of " << howMany << ": ";
+		cin >> arr[i];
+	}
+}
+
+template <typename T> void max5show(T arr[], int howMany)
+{
+	for (int i = 0; i < howMany; i++)
+	{
+		cout << i + 1 << " element: " << arr[i] << endl;
+	}
+}
+
+
+template <typename T> T max5(T arr[], int howMany)
+{
+	T temp;
+	temp = arr[0];
+	for (int i = 0; i < howMany; i++)
+	{
+		if (temp < arr[i])
+		temp = arr[i];
+	}
+	return temp;
+}
