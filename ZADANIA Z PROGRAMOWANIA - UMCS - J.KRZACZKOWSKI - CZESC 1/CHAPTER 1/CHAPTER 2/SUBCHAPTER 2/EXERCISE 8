@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+float sqrt(unsigned int n);
+using namespace std;
+
+int main()
+{
+	cout << "This program will give u sqrt from n." << endl;
+	cout << "Type n: ";
+	int n;
+	cin >> n;
+	cout << "Sqrt from " << n << " is " << sqrt(n) << endl;
+	system("PAUSE");
+    return 0;
+}
+
+float sqrt(unsigned int n)
+{
+	double sqrt = 0;
+	for (int i = 1; i <= n; i++)
+	{
+		if (i*i <= n)
+			sqrt = i;
+	}
+	return sqrt;
+}
+
