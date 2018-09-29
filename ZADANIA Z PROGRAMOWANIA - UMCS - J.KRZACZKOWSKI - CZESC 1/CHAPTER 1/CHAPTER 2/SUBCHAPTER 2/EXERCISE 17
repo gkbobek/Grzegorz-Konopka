@@ -1,0 +1,19 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+void func();
+
+int main()
+{
+	func();
+    return 0;
+	system("PAUSE");
+}
+
+void func()
+{
+	static unsigned int number = 0;
+	number++;
+	cout << "Function runs: " << number << " times!" << endl;
+}
