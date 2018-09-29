@@ -21,6 +21,6 @@ int main()
 	delete[] table;
 	cout << "Aritmetic average = " << sr;
 	cin.get();
-  return 0;
+  	return 0;
 }
 
