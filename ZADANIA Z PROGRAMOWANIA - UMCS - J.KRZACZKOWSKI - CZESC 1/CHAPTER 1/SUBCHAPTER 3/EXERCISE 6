@@ -1,0 +1,49 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double a1, a2, b1, b2, c1, c2;
+	cout << "This program will give you X and Y in system of linear equations!" << endl << endl;
+	cout << "Give me X coefficient in first equation: ";
+	cin >> a1;
+	cout << "Give me Y coefficient in first equation: ";
+	cin >> b1;
+	cout << "Give me free expression in first equation: ";
+	cin >> c1;
+	cout << "Give me X coefficient in first equation: ";
+	cin >> a2;
+	cout << "Give me Y coefficient in first equation: ";
+	cin >> b2;
+	cout << "Give me free expression in first equation: ";
+	cin >> c2;
+	cin.get();
+	system("CLS");
+	cout << "Your exuations: " << endl;
+	if (b1 > 0)
+	cout << a1 << "x + " << b1 << "y" << " = " << c1 << endl;
+	else
+	cout << a1 << "x" << b1 << "y" << " = " << c1 << endl;
+	if (b2 > 0)
+	cout << a2 << "x + " << b2 << "y" << " = " << c2 << endl;
+	else
+	cout << a2 << "x" << b2 << "y" << " = " << c2 << endl;
+	double w = (a1 * b2) - (a2 * b1);
+	double wx = (c1 * b2) - (c2 * b1);
+	double wy = (a1 * c2) - (a2 * c1);
+	double x = wx / w;
+	double y = wy / w;
+	if (w != 0)
+	{
+		cout << "X = " << x << endl;
+		cout << "Y = " << y << endl;
+	}
+	else if ((w == 0) && (wx == 0) && (wy == 0))
+		cout << "Infinite solutions!";
+	else
+		cout << "This eguations doesn't have solution!";
+	cin.get();
+	return 0;
+}
+
