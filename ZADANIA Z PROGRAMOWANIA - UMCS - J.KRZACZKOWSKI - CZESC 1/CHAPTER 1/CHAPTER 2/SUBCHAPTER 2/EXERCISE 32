@@ -9,7 +9,7 @@ int main()
 	int table[limit];
 	cout << "Highest value: " << function(table, limit) << endl;
 	system("PAUSE");
-    return 0;
+    	return 0;
 }
 
 int function(int table[], int size)
