@@ -1,5 +1,3 @@
-// MK_5_5.cpp : Defines the entry point for the console application.
-//
 /*Napisz program, który z wykorzystaniem instrukcji wyboru switch ... case oblicza pierwiastki równania kwadratowego ax2+bx+c = 0,
 gdzie zmienne a, b oraz c to liczby rzeczywiste wprowadzane z klawiatury.
 Dla zmiennych a, b, c, x1 oraz x2 należy przyjąć format wyświetlania ich z dwoma miejscami po kropce.
