@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int number;
+	double sr;
+	double sum = 0;
+	cout << "How many numbers do you have? ";
+	cin >> number;
+	int *table = new int [number];
+	for (int i = 0; i < number; i++)
+	{
+		cout << "Give me a number no. " << i + 1 << " = ";
+		cin >> table[i];
+		cin.get();
+		sum += table[i];
+	}
+	sr = sum / number;
+	delete[] table;
+	cout << "Aritmetic average = " << sr;
+	cin.get();
+  return 0;
+}
+
