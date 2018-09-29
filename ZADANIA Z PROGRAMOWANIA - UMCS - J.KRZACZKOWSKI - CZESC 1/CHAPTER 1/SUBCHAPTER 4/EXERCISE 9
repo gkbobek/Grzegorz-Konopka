@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n, m;
+	int sum;
+	cout << "Give me a first number: ";
+	cin >> n;
+	cout << "Give me a second number: ";
+	cin >> m;
+	cin.get();
+	do
+	{
+		if (m > n)
+			sum = m - n;
+		else
+			sum = n - m;
+	} 
+	while (m != n);
+	cout << "NWD = " << n;
+	cin.get();
+    return 0;
+}
+
