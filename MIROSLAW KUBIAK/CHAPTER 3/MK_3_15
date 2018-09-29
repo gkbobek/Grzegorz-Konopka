@@ -1,6 +1,5 @@
-// MK_3_15.cpp : Defines the entry point for the console application.
-//
 /*Napisz program, który za pomocą instrukcji while sumuje liczby nieparzyste w przedziale od 1 do 100.*/
+
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
