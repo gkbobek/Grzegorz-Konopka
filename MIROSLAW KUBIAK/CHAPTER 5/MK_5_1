@@ -1,9 +1,8 @@
-// MK_5_1.cpp : Defines the entry point for the console application.
-//
 /*Napisz program obliczający pole prostokąta. Powinien on zawierać jeden podprogram: bezparametrową funkcję pole prostokata(),
 w której zawarty będzie algorytm obliczania pola.Wartości boków a i b wprowadzamy z klawiatury. W programie należy założyć,
 że zmienne a, b oraz pole są typu float (rzeczywistego) i są one zmiennymi globalnymi.
 Należy dla nich przyjąć format wyświetlania ich z dwoma miejscami po kropce.*/
+
 #include "stdafx.h"
 #include <iostream>
 #include <stdlib.h>
@@ -26,5 +25,5 @@ int main()
 	cin >> b;
 	area(a, b);
 	system("PAUSE");
-  return 0;
+  	return 0;
 }
