@@ -12,6 +12,6 @@ int main()
 	cout << "This is your number in scientific notation: ";
 	cout << fixed << scientific << number;
 	cin.get();
-  return 0;
+  	return 0;
 }
 
